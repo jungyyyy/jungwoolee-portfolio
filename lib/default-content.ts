@@ -1,0 +1,290 @@
+import { SiteContent } from "./content-types";
+
+export const defaultContent: SiteContent = {
+  shared: {
+    contactEmail: "jungwoolee6973@gmail.com",
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/jung-woo-lee-9131901a8/",
+      github: "https://github.com/jungyyyy",
+      tiktok: "https://tiktok.com/@growjungwoo",
+      instagram: "https://instagram.com/growjungwoo/",
+      youtube: "https://youtube.com/@growjungwoo",
+    },
+  },
+  images: {
+    founderHero: "/images/hero.png",
+    creatorHero: "/images/creator-hero.png",
+    about: "/images/about.png",
+    spreadableLogo: "/images/spreadableai-logo.png",
+  },
+  founder: {
+    hero: {
+      label: "Co-founder · Berlin · SpreadableAI",
+      heading: "I left Korea at 15\nwith a suitcase and a plan.",
+      description:
+        "Now I'm building AI for the creator economy. Co-founder of SpreadableAI — a TikTok Shop operating system for agencies. Korean in Berlin. Obsessed with the gap between wanting something and making it happen.",
+      primaryCtaLabel: "See what I'm building →",
+      secondaryCtaLabel: "Get in touch →",
+    },
+    about: {
+      sectionLabel: "About",
+      quoteLine1: "I left Korea alone at 15.",
+      quoteLine2: "I've been building ever since.",
+      paragraphs: [
+        "I'm Jungwoo Lee — 24, Korean, based in Berlin. I'm the co-founder of SpreadableAI, an AI operating system for TikTok Shop agencies. I left Korea alone at 15, convinced my own parents to let me go, and I've been figuring it out on my own since. UK, Israel, Germany — four countries before turning 25.",
+        "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025 and went full-time on SpreadableAI in January 2026. I vibe-code with Cursor, lead sales and product, and I'm building something I want to be big. Financial freedom isn't a dirty word — it's the point.",
+        "I gained 20kg in my first months in Berlin. Seasonal depression hit hard. I lost all of it in six months and got back up. I don't hide that. I learn fast, move fast, and I know what I want.",
+      ],
+    },
+    stats: [
+      { value: "4", label: "Countries before 25" },
+      { value: "15", label: "Age I left Korea" },
+      { value: "C1", label: "German — self-taught" },
+      { value: "4", label: "Co-founders at SpreadableAI" },
+    ],
+    building: {
+      sectionLabel: "Current Company",
+      title: "SpreadableAI",
+      subtitle: "TikTok Shop AI Operating System for Agencies",
+      description:
+        "TikTok Shop is expected to hit $112B GMV in 2026. 90% of sales come from creator content — but agencies manage 5,000+ creators with no scalable way to give feedback. We automate that feedback loop with AI.",
+      bullets: [
+        "Co-founder — leading sales and product",
+        "Signed pilot partner: Orbio World, a major TikTok Shop agency",
+        "Real B2B waiting list — product still in development",
+        "Team of 4 co-founders, started January 2026",
+        "Built on TikTok Shop Seller, Developer & Business APIs",
+      ],
+      tags: ["B2B SaaS", "AI", "TikTok Shop"],
+      websiteUrl: "https://spreadableai.com",
+      websiteLabel: "spreadableai.com",
+    },
+    experience: {
+      sectionLabel: "Experience & Background",
+      heading: "The journey so far",
+      items: [
+        {
+          period: "Jan 2026–Present",
+          title: "Co-founder",
+          place: "SpreadableAI, Berlin",
+          description:
+            "Building an AI TikTok Shop operating system for agencies. Leading sales and product with a team of four co-founders.",
+        },
+        {
+          period: "Jan 2025–Dec 2025",
+          title: "Project Management Assistant",
+          place: "MBition (Mercedes-Benz), Berlin",
+          description:
+            "Supported the PMO on large-scale automotive infotainment software rollouts. Coordinated PI Planning, cross-functional engineering teams, risk mitigation, and stakeholder communication.",
+        },
+        {
+          period: "Aug 2021–Dec 2025",
+          title: "BSc Digital Product Management",
+          place: "CODE University of Applied Sciences, Berlin",
+          description:
+            "Bachelor's in Digital Product Management. Graduated December 2025.",
+        },
+        {
+          period: "Sep 2022–Aug 2023",
+          title: "Marketing Assistant",
+          place: "CODE University of Applied Sciences, Berlin",
+          description:
+            "Managed CODE's Instagram and created content. Organized events across campus.",
+        },
+        {
+          period: "May 2021–Aug 2022",
+          title: "Math & English Tutor",
+          place: "Self-employed, Seoul",
+          description:
+            "Tutored students in math and English while building toward studying abroad.",
+        },
+        {
+          period: "2021",
+          title: "Arrived in Berlin",
+          place: "Berlin, Germany",
+          description:
+            "Moved from Israel to start at CODE University. Started learning German from scratch — reached C1 in three years, purely for personal growth.",
+        },
+        {
+          period: "2019–2021",
+          title: "IB Diploma",
+          place: "Eastern Mediterranean International School, Israel",
+          description:
+            "Dance, Computer Science, Mathematics, Global Politics.",
+        },
+        {
+          period: "2017–2019",
+          title: "IGCSE",
+          place: "EF Academy",
+          description: "Completed IGCSE before moving to Israel for the IB.",
+        },
+        {
+          period: "2017",
+          title: "Left Korea at 15",
+          place: "United Kingdom",
+          description:
+            "Convinced my parents to let me study abroad. Suitcase and a plan — the beginning of everything.",
+        },
+      ],
+    },
+    skills: {
+      sectionLabel: "Skills",
+      heading: "What I bring to the table",
+      groups: [
+        {
+          title: "Product & Strategy",
+          skills: [
+            "Product Management",
+            "Jira & Roadmapping",
+            "PI Planning",
+            "Stakeholder Comms",
+            "B2B Sales",
+            "Risk Management",
+            "Microsoft Excel",
+          ],
+        },
+        {
+          title: "Building & Technical",
+          skills: [
+            "Cursor / Vibe Coding",
+            "Next.js & React",
+            "TikTok Shop APIs",
+            "Seller & Developer API",
+            "AI / LLM Integration",
+          ],
+        },
+        {
+          title: "Content & Languages",
+          skills: [
+            "Instagram Growth",
+            "Short-form Video",
+            "Korean (Native)",
+            "English (Fluent)",
+            "German (C1)",
+          ],
+        },
+      ],
+    },
+    contact: {
+      heading: "Let's talk.",
+      subtext:
+        "SpreadableAI, a collab, or just a conversation — I'm open to all of it. I reply fast.",
+    },
+  },
+  creator: {
+    hero: {
+      label: "Content Creator · Berlin · @growjungwoo",
+      heading: "Building in public.\nNo filter.",
+      description:
+        "I posted every single day for over a year to find my voice. Korean founder in Berlin — sharing startup life, the creator economy, and the honest truth about building at 24.",
+      primaryCtaLabel: "See my content →",
+      secondaryCtaLabel: "Work with me →",
+    },
+    about: {
+      sectionLabel: "About as Creator",
+      quote:
+        "I posted on social media every single day for over a year to find my voice. My Instagram is @growjungwoo. I create around building, founder life, and the creator economy. I also studied German every single day for three years — no external requirement — and reached C1. That's the kind of person I am.",
+    },
+    portfolio: {
+      sectionLabel: "Content Portfolio",
+      heading: "Selected work",
+      footerNote:
+        "More on TikTok, Instagram, and YouTube — @growjungwoo.",
+      items: [
+        {
+          platform: "TikTok",
+          title: "Why I left Korea at 15",
+          stat: "Personal story · building in public",
+          url: "https://tiktok.com/@growjungwoo",
+        },
+        {
+          platform: "Instagram",
+          title: "Daily founder life in Berlin",
+          stat: "Posted every day for 365+ days",
+          url: "https://instagram.com/growjungwoo/",
+        },
+        {
+          platform: "TikTok",
+          title: "What we're building at SpreadableAI",
+          stat: "TikTok Shop · creator economy",
+          url: "https://tiktok.com/@growjungwoo",
+        },
+        {
+          platform: "YouTube",
+          title: "Building a startup at 24",
+          stat: "Long-form · founder journey",
+          url: "https://youtube.com/@growjungwoo",
+        },
+        {
+          platform: "Instagram",
+          title: "Learning German to C1 in 3 years",
+          stat: "No requirement — just discipline",
+          url: "https://instagram.com/growjungwoo/",
+        },
+        {
+          platform: "TikTok",
+          title: "The honest truth about founder life",
+          stat: "No performance — just reality",
+          url: "https://tiktok.com/@growjungwoo",
+        },
+      ],
+    },
+    platforms: {
+      sectionLabel: "Platforms & Reach",
+      heading: "Where I create",
+      items: [
+        {
+          platform: "TikTok",
+          handle: "@growjungwoo",
+          url: "https://tiktok.com/@growjungwoo",
+          focus: "Founder life & building in public",
+          cadence: "Short-form · daily content",
+        },
+        {
+          platform: "Instagram",
+          handle: "@growjungwoo",
+          url: "https://instagram.com/growjungwoo/",
+          focus: "Building, founder life, creator economy",
+          cadence: "Posted daily for 365+ days",
+        },
+        {
+          platform: "YouTube",
+          handle: "@growjungwoo",
+          url: "https://youtube.com/@growjungwoo",
+          focus: "Long-form building & startup content",
+          cadence: "Founder journey · deep dives",
+        },
+      ],
+    },
+    brands: {
+      sectionLabel: "What Brands Get",
+      heading: "Why work with me",
+      items: [
+        {
+          emoji: "🎬",
+          title: "Content Creation",
+          description:
+            "Short-form video for TikTok, Instagram, and YouTube. Korean-German perspective. I don't perform — I share what's actually happening in the build.",
+        },
+        {
+          emoji: "📣",
+          title: "Audience",
+          description:
+            "Young, international audience into startup life, personal growth, and the creator economy. People who want the real version, not the highlight reel.",
+        },
+        {
+          emoji: "🌍",
+          title: "Multilingual",
+          description:
+            "Content in English, Korean, and German. Three markets, one voice — direct, honest, and built from lived experience.",
+        },
+      ],
+    },
+    contact: {
+      heading: "Work with me.",
+      subtext:
+        "Brand collabs, sponsored content, affiliate partnerships — reach out directly. Tell me what you're building and we'll figure out if it's a fit.",
+      replyNote: "I reply within 24 hours.",
+    },
+  },
+};
