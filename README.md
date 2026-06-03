@@ -25,4 +25,4 @@ Push to GitHub and import the repo in [Vercel](https://vercel.com). No env vars 
 
 ## Live
 
-🔗 [jungwoolee.com](https://jungwoolee.com)
+🔗 [jungwoolee-portfolio.vercel.app](https://jungwoolee-portfolio.vercel.app/)
