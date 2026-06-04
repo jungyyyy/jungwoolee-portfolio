@@ -22,7 +22,7 @@ export const defaultContent: SiteContent = {
       label: "Co-founder · Berlin · SpreadableAI",
       heading: "I left Korea at 15\nwith a suitcase and a plan.",
       description:
-        "Now I'm building AI for the creator economy. Co-founder of SpreadableAI — a TikTok Shop operating system for agencies. Korean in Berlin. Obsessed with the gap between wanting something and making it happen.",
+        "Now I'm building AI for the e-commerce ecosystem. Co-founder of SpreadableAI — a TikTok Shop operating system for agencies & brands. Korean in Berlin. Obsessed with building stuff.",
       primaryCtaLabel: "See what I'm building →",
       secondaryCtaLabel: "Get in touch →",
     },
@@ -33,13 +33,13 @@ export const defaultContent: SiteContent = {
       paragraphs: [
         "I'm Jungwoo Lee — 24, Korean, based in Berlin. I'm the co-founder of SpreadableAI, an AI operating system for TikTok Shop agencies. I left Korea alone at 15, convinced my own parents to let me go, and I've been figuring it out on my own since. UK, Israel, Germany — four countries before turning 25.",
         "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025 and went full-time on SpreadableAI in January 2026. I vibe-code with Cursor, lead sales and product, and I'm building something I want to be big. Financial freedom isn't a dirty word — it's the point.",
-        "I gained 20kg in my first months in Berlin. Seasonal depression hit hard. I lost all of it in six months and got back up. I don't hide that. I learn fast, move fast, and I know what I want.",
+        "I gained 20kg in my first months in Berlin. Seasonal depression hit hard. I lost all of it in six months and got back up. I don't hide that. I learn fast, move fast, and I get up fast.",
       ],
     },
     stats: [
       { value: "4", label: "Countries before 25" },
       { value: "15", label: "Age I left Korea" },
-      { value: "C1", label: "German — self-taught" },
+      { value: "3", label: "Languages I speak (EN, KO, DE)" },
       { value: "4", label: "Co-founders at SpreadableAI" },
     ],
     building: {
@@ -47,11 +47,11 @@ export const defaultContent: SiteContent = {
       title: "SpreadableAI",
       subtitle: "TikTok Shop AI Operating System for Agencies",
       description:
-        "TikTok Shop is expected to hit $112B GMV in 2026. 90% of sales come from creator content — but agencies manage 5,000+ creators with no scalable way to give feedback. We automate that feedback loop with AI.",
+        "TikTok Shop is expected to hit $112B GMV in 2026. 90% of sales come from creator content, but agencies manage 5,000+ creators with no scalable way to give feedback. We automate that feedback loop with AI.",
       bullets: [
         "Co-founder — leading sales and product",
-        "Signed pilot partner: Orbio World, a major TikTok Shop agency",
-        "Real B2B waiting list — product still in development",
+        "Signed pilot partners",
+        "50+ waiting list — product still in development",
         "Team of 4 co-founders, started January 2026",
         "Built on TikTok Shop Seller, Developer & Business APIs",
       ],
@@ -103,12 +103,12 @@ export const defaultContent: SiteContent = {
           title: "Arrived in Berlin",
           place: "Berlin, Germany",
           description:
-            "Moved from Israel to start at CODE University. Started learning German from scratch — reached C1 in three years, purely for personal growth.",
+            "Moved from TLV to start at CODE University. Started learning German from scratch, reached C1 in three years, purely for personal growth.",
         },
         {
           period: "2019–2021",
           title: "IB Diploma",
-          place: "Eastern Mediterranean International School, Israel",
+          place: "Eastern Mediterranean International School, Tel Aviv",
           description:
             "Dance, Computer Science, Mathematics, Global Politics.",
         },
@@ -116,14 +116,14 @@ export const defaultContent: SiteContent = {
           period: "2017–2019",
           title: "IGCSE",
           place: "EF Academy",
-          description: "Completed IGCSE before moving to Israel for the IB.",
+          description: "Completed IGCSE before moving to Tel Aviv for the IB Diploma.",
         },
         {
           period: "2017",
           title: "Left Korea at 15",
           place: "United Kingdom",
           description:
-            "Convinced my parents to let me study abroad. Suitcase and a plan — the beginning of everything.",
+            "Convinced my parents to let me study abroad. Suitcase and a plan, the beginning of everything.",
         },
       ],
     },
@@ -156,7 +156,7 @@ export const defaultContent: SiteContent = {
         {
           title: "Content & Languages",
           skills: [
-            "Instagram Growth",
+            "Social Media Growth",
             "Short-form Video",
             "Korean (Native)",
             "English (Fluent)",
@@ -168,7 +168,7 @@ export const defaultContent: SiteContent = {
     contact: {
       heading: "Let's talk.",
       subtext:
-        "SpreadableAI, a collab, or just a conversation — I'm open to all of it. I reply fast.",
+        "SpreadableAI, a collab, or just a conversation. I'm open to all of it. I reply fast.",
     },
   },
   creator: {
@@ -176,14 +176,14 @@ export const defaultContent: SiteContent = {
       label: "Content Creator · Berlin · @growjungwoo",
       heading: "Building in public.\nNo filter.",
       description:
-        "I posted every single day for over a year to find my voice. Korean founder in Berlin — sharing startup life, the creator economy, and the honest truth about building at 24.",
+        "I posted every single day for over a year to find my voice. Korean in Berlin, sharing cultural insights between Korea and Germany, some tips and my life.",
       primaryCtaLabel: "See my content →",
       secondaryCtaLabel: "Work with me →",
     },
     about: {
       sectionLabel: "About as Creator",
       quote:
-        "I posted on social media every single day for over a year to find my voice. My Instagram is @growjungwoo. I create around building, founder life, and the creator economy. I also studied German every single day for three years — no external requirement — and reached C1. That's the kind of person I am.",
+        "I make contents for my German audience in German. Active on IG, TikTok, and YouTube. Occasional Korean and English Contents.",
     },
     portfolio: {
       sectionLabel: "Content Portfolio",
@@ -192,40 +192,40 @@ export const defaultContent: SiteContent = {
         "More on TikTok, Instagram, and YouTube — @growjungwoo.",
       items: [
         {
-          platform: "TikTok",
-          title: "Why I left Korea at 15",
-          stat: "Personal story · building in public",
-          url: "https://tiktok.com/@growjungwoo",
+          platform: "Instagram",
+          title: "4 things that Germans find impolite in Korea",
+          stat: ":))",
+          url: "https://www.instagram.com/reel/DWG6v65iH--/?igsh=c2xhcjYyaXR0Zmtm",
         },
         {
           platform: "Instagram",
-          title: "Daily founder life in Berlin",
-          stat: "Posted every day for 365+ days",
-          url: "https://instagram.com/growjungwoo/",
+          title: "Koreans love Sunsticks",
+          stat: "Introducing ABIB Sunsticks",
+          url: "https://www.instagram.com/reel/DYjrEeHixLM/?igsh=eXdyMmpueHlxdmht",
+        },
+        {
+          platform: "Instagram",
+          title: "6 differences in Korean food culture",
+          stat: "differences between Korean and German food culture",
+          url: "https://www.instagram.com/reel/DUOQEUOCEb2/?igsh=aDNqdW5xOXRrdG83",
         },
         {
           platform: "TikTok",
-          title: "What we're building at SpreadableAI",
-          stat: "TikTok Shop · creator economy",
-          url: "https://tiktok.com/@growjungwoo",
+          title: "my german learning journey",
+          stat: "how I learned German to C1 in 3 years",
+          url: "https://vm.tiktok.com/ZGdHEGJRj/",
         },
         {
           platform: "YouTube",
-          title: "Building a startup at 24",
-          stat: "Long-form · founder journey",
-          url: "https://youtube.com/@growjungwoo",
+          title: "what I brought from Korea to Germany",
+          stat: "korean foods to buy in Korea",
+          url: "https://youtube.com/shorts/6LiyQdD1tes?is=41QkmBpZd-J4V5yF",
         },
         {
-          platform: "Instagram",
-          title: "Learning German to C1 in 3 years",
-          stat: "No requirement — just discipline",
-          url: "https://instagram.com/growjungwoo/",
-        },
-        {
-          platform: "TikTok",
-          title: "The honest truth about founder life",
-          stat: "No performance — just reality",
-          url: "https://tiktok.com/@growjungwoo",
+          platform: "YouTube",
+          title: "Lass uns ins Kino in Korea gehen",
+          stat: "what foods to get in Korean Cinema",
+          url: "https://youtube.com/shorts/HrSgBY8SDdI?is=P27bf66psLCVzkja",
         },
       ],
     },
@@ -237,22 +237,22 @@ export const defaultContent: SiteContent = {
           platform: "TikTok",
           handle: "@growjungwoo",
           url: "https://tiktok.com/@growjungwoo",
-          focus: "Founder life & building in public",
-          cadence: "Short-form · daily content",
+          focus: "Cultural Insights as a Korean in Germany",
+          cadence: "Short-form · 2 times a week",
         },
         {
           platform: "Instagram",
           handle: "@growjungwoo",
           url: "https://instagram.com/growjungwoo/",
-          focus: "Building, founder life, creator economy",
-          cadence: "Posted daily for 365+ days",
+          focus: "Introducing Korean products to Germany",
+          cadence: "Short-form · 2 times a week",
         },
         {
           platform: "YouTube",
           handle: "@growjungwoo",
           url: "https://youtube.com/@growjungwoo",
-          focus: "Long-form building & startup content",
-          cadence: "Founder journey · deep dives",
+          focus: "Cultural Insights as a Korean in Germany",
+          cadence: "Short & Long-forms mixed · 2-3 times a week",
         },
       ],
     },
@@ -264,27 +264,27 @@ export const defaultContent: SiteContent = {
           emoji: "🎬",
           title: "Content Creation",
           description:
-            "Short-form video for TikTok, Instagram, and YouTube. Korean-German perspective. I don't perform — I share what's actually happening in the build.",
+            "Natural talking videos for TikTok, Instagram, and YouTube. Korean-German perspective. I share interesting insights to my German audience.",
         },
         {
           emoji: "📣",
           title: "Audience",
           description:
-            "Young, international audience into startup life, personal growth, and the creator economy. People who want the real version, not the highlight reel.",
+            "Mostly German audience, but also Korean and English audience. 70% of my audience is female, age range is 18-50.",
         },
         {
           emoji: "🌍",
           title: "Multilingual",
           description:
-            "Content in English, Korean, and German. Three markets, one voice — direct, honest, and built from lived experience.",
+            "Content in mostly German, but also Korean and English. Three markets, friendly, honest, and built from lived experience.",
         },
       ],
     },
     contact: {
       heading: "Work with me.",
       subtext:
-        "Brand collabs, sponsored content, affiliate partnerships — reach out directly. Tell me what you're building and we'll figure out if it's a fit.",
-      replyNote: "I reply within 24 hours.",
+        "Brand collabs, sponsored content, affiliate partnerships, or just a conversation. Reach out directly. Tell me what you're building and we'll figure out if it's a fit.",
+      replyNote: "I reply fast.",
     },
   },
 };
