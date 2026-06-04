@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
 import EditableText from "./admin/EditableText";
 import EditableImage from "./admin/EditableImage";
@@ -18,10 +19,12 @@ interface HeroPhotoProps {
 
 export function HeroPhoto({
   contentKey,
-  alt = "Jungwoo Lee",
+  alt,
   className = "",
 }: HeroPhotoProps) {
+  const { t } = useTranslation();
   const { content } = useContent();
+  const imageAlt = alt ?? t("hero.altDefault");
   const src = contentKey === "images.founderHero"
     ? content.images.founderHero
     : content.images.creatorHero;
@@ -49,13 +52,13 @@ export function HeroPhoto({
             <EditableImage
               contentKey={contentKey}
               src={src}
-              alt={alt}
+              alt={imageAlt}
               width={480}
               height={600}
               className="aspect-[4/5] w-full object-cover"
               wrapperClassName="block w-full"
               priority
-              uploadLabel="Upload hero photo"
+              uploadLabel={t("hero.uploadHero")}
             />
             <div
               className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent/10 via-transparent to-transparent"

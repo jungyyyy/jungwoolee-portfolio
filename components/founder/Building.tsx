@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import SectionWrapper from "../SectionWrapper";
 import FadeIn, { StaggerItem } from "../FadeIn";
 import EditableText from "../admin/EditableText";
@@ -7,6 +8,7 @@ import EditableImage from "../admin/EditableImage";
 import { useContent } from "../admin/ContentProvider";
 
 export default function Building() {
+  const { t } = useTranslation();
   const { content } = useContent();
   const building = content.founder.building;
 
@@ -21,12 +23,12 @@ export default function Building() {
                   <EditableImage
                     contentKey="images.spreadableLogo"
                     src={content.images.spreadableLogo}
-                    alt="SpreadableAI logo"
+                    alt={t("building.logoAlt")}
                     width={120}
                     height={120}
                     className="h-full w-full object-contain"
                     wrapperClassName="h-full w-full"
-                    uploadLabel="Upload logo"
+                    uploadLabel={t("building.uploadLogo")}
                   />
                 </div>
               </FadeIn>

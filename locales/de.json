@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Jungwoo Lee — Founder & Creator",
+    "description": "24-jähriger koreanischer Co-Founder in Berlin. Baut SpreadableAI — KI für TikTok-Shop-Agenturen. Content Creator."
+  },
+  "nav": {
+    "contact": "Kontakt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "founder": {
+      "about": "Über mich",
+      "building": "Was ich baue",
+      "experience": "Erfahrung",
+      "skills": "Skills",
+      "contact": "Kontakt"
+    },
+    "creator": {
+      "about": "Über mich",
+      "portfolio": "Portfolio",
+      "platforms": "Plattformen",
+      "brands": "Für Brands",
+      "contact": "Kontakt"
+    }
+  },
+  "modeToggle": {
+    "founder": "Founder & PM",
+    "creator": "Content Creator"
+  },
+  "common": {
+    "loading": "Lädt…",
+    "name": "Jungwoo Lee"
+  },
+  "hero": {
+    "altDefault": "Jungwoo Lee",
+    "altCreator": "Jungwoo Lee — Content Creator",
+    "uploadHero": "Hero-Foto hochladen"
+  },
+  "about": {
+    "altPhoto": "Jungwoo Lee",
+    "uploadAbout": "About-Foto hochladen"
+  },
+  "building": {
+    "logoAlt": "SpreadableAI Logo",
+    "uploadLogo": "Logo hochladen"
+  },
+  "portfolio": {
+    "preview": "Vorschau",
+    "watchPreview": "Vorschau ansehen",
+    "viewOn": "Auf {{platform}} ansehen",
+    "closePreview": "Vorschau schließen",
+    "previewUnavailable": "Für diesen Link gibt es keine Vorschau. Öffne ihn direkt auf {{platform}}.",
+    "openOn": "Auf {{platform}} öffnen →"
+  },
+  "editable": {
+    "uploadPhoto": "Foto hochladen",
+    "uploading": "Wird hochgeladen…",
+    "clickToEdit": "Zum Bearbeiten klicken",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "cancel": "Abbrechen",
+    "saved": "Gespeichert ✓"
+  },
+  "admin": {
+    "editModeOn": "✏️ Bearbeitungsmodus AN",
+    "logout": "Abmelden",
+    "label": "Admin",
+    "signIn": "Anmelden",
+    "password": "Passwort",
+    "passwordPlaceholder": "Passwort",
+    "enterEditMode": "Bearbeitungsmodus starten",
+    "signingIn": "Anmeldung…",
+    "incorrectPassword": "Falsches Passwort",
+    "genericError": "Etwas ist schiefgelaufen. Versuch es nochmal."
+  }
+}

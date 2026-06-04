@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import SectionWrapper from "../SectionWrapper";
 import FadeIn, { StaggerItem } from "../FadeIn";
 import EditableText from "../admin/EditableText";
@@ -7,6 +8,7 @@ import EditableImage from "../admin/EditableImage";
 import { useContent } from "../admin/ContentProvider";
 
 export default function FounderAbout() {
+  const { t } = useTranslation();
   const { content } = useContent();
   const { about, stats } = content.founder;
 
@@ -39,12 +41,12 @@ export default function FounderAbout() {
                 <EditableImage
                   contentKey="images.about"
                   src={content.images.about}
-                  alt="Jungwoo Lee"
+                  alt={t("about.altPhoto")}
                   width={480}
                   height={360}
                   className="aspect-[4/3] w-full object-cover"
                   wrapperClassName="block w-full"
-                  uploadLabel="Upload about photo"
+                  uploadLabel={t("about.uploadAbout")}
                 />
                 <div
                   className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent/10 via-transparent to-transparent"

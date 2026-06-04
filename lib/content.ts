@@ -2,21 +2,21 @@ export type { Mode, SiteContent, PortfolioPlatform } from "./content-types";
 
 export interface NavLink {
   id: string;
-  label: string;
+  labelKey: string;
 }
 
 export const founderNavLinks: NavLink[] = [
-  { id: "about", label: "About" },
-  { id: "building", label: "Building" },
-  { id: "experience", label: "Experience" },
-  { id: "skills", label: "Skills" },
-  { id: "contact", label: "Contact" },
+  { id: "about", labelKey: "nav.founder.about" },
+  { id: "building", labelKey: "nav.founder.building" },
+  { id: "experience", labelKey: "nav.founder.experience" },
+  { id: "skills", labelKey: "nav.founder.skills" },
+  { id: "contact", labelKey: "nav.founder.contact" },
 ];
 
 export const creatorNavLinks: NavLink[] = [
-  { id: "about", label: "About" },
-  { id: "portfolio", label: "Portfolio" },
-  { id: "platforms", label: "Platforms" },
-  { id: "brands", label: "For Brands" },
-  { id: "contact", label: "Contact" },
+  { id: "about", labelKey: "nav.creator.about" },
+  { id: "portfolio", labelKey: "nav.creator.portfolio" },
+  { id: "platforms", labelKey: "nav.creator.platforms" },
+  { id: "brands", labelKey: "nav.creator.brands" },
+  { id: "contact", labelKey: "nav.creator.contact" },
 ];

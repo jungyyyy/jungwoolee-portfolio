@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { getEmbedUrl } from "@/lib/embeds";
 import { PortfolioPlatform } from "@/lib/content-types";
@@ -18,6 +19,7 @@ export default function PortfolioModal({
   title,
   onClose,
 }: PortfolioModalProps) {
+  const { t } = useTranslation();
   const embedUrl =
     platform === "YouTube" ? null : getEmbedUrl(url, platform);
 
@@ -59,7 +61,7 @@ export default function PortfolioModal({
             </div>
             <button
               onClick={onClose}
-              aria-label="Close preview"
+              aria-label={t("portfolio.closePreview")}
               className="rounded-full p-2 text-secondary transition-colors hover:text-primary"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,7 +83,7 @@ export default function PortfolioModal({
           ) : (
             <div className="rounded-card border border-border bg-surface p-8 text-center">
               <p className="text-secondary text-sm">
-                Preview unavailable for this link. Open it directly on {platform}.
+                {t("portfolio.previewUnavailable", { platform })}
               </p>
             </div>
           )}
@@ -92,7 +94,7 @@ export default function PortfolioModal({
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center text-sm text-accent transition-opacity hover:opacity-80"
           >
-            Open on {platform} →
+            {t("portfolio.openOn", { platform })}
           </a>
         </motion.div>
       </motion.div>

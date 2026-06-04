@@ -1,0 +1,229 @@
+{
+  "founder": {
+    "hero": {
+      "label": "Co-Founder · Berlin · SpreadableAI",
+      "heading": "Mit 15 bin ich aus Korea weg,\nmit einem Koffer und einem Plan.",
+      "description": "Heute baue ich KI für das E-Commerce-Ökosystem. Co-Founder von SpreadableAI — einem TikTok-Shop-Betriebssystem für Agenturen & Brands. Koreaner in Berlin. Besessen vom Bauen.",
+      "primaryCtaLabel": "Sieh, was ich baue →",
+      "secondaryCtaLabel": "Schreib mir →"
+    },
+    "about": {
+      "sectionLabel": "Über mich",
+      "quoteLine1": "Mit 15 bin ich allein aus Korea weg.",
+      "quoteLine2": "Seitdem baue ich.",
+      "paragraphs": [
+        "Ich bin Jungwoo Lee — 24, Koreaner, in Berlin. Co-Founder von SpreadableAI, einem KI-Betriebssystem für TikTok-Shop-Agenturen. Mit 15 bin ich allein aus Korea weg, habe meine Eltern überzeugt, und seitdem kläre ich alles selbst. UK, Israel, Deutschland — vier Länder, bevor ich 25 wurde.",
+        "Ich habe im Dezember 2025 an der CODE University of Applied Sciences Digital Product Management abgeschlossen und bin im Januar 2026 Vollzeit bei SpreadableAI. Ich vibe-code mit Cursor, leite Sales und Product, und baue etwas, das groß werden soll. Finanzielle Freiheit ist kein Schimpfwort — das ist der Punkt.",
+        "In meinen ersten Monaten in Berlin habe ich 20 kg zugenommen. Saisonale Depression hat hart zugeschlagen. In sechs Monaten habe ich alles wieder abgenommen und bin zurückgekommen. Das verstecke ich nicht. Ich lerne schnell, bewege mich schnell, und stehe schnell wieder auf."
+      ]
+    },
+    "stats": [
+      { "value": "4", "label": "Länder vor dem 25." },
+      { "value": "15", "label": "Alter, als ich Korea verließ" },
+      { "value": "3", "label": "Sprachen (EN, KO, DE)" },
+      { "value": "4", "label": "Co-Founder bei SpreadableAI" }
+    ],
+    "building": {
+      "sectionLabel": "Aktuelles Unternehmen",
+      "title": "SpreadableAI",
+      "subtitle": "TikTok Shop KI-Betriebssystem für Agenturen",
+      "description": "TikTok Shop soll 2026 voraussichtlich 112 Mrd. $ GMV erreichen. 90 % der Sales kommen von Creator-Content — aber Agenturen managen 5.000+ Creator ohne skalierbare Möglichkeit, Feedback zu geben. Wir automatisieren diesen Feedback-Loop mit KI.",
+      "bullets": [
+        "Co-Founder — leite Sales und Product",
+        "Pilot-Partner unter Vertrag",
+        "50+ auf der Warteliste — Produkt noch in Entwicklung",
+        "Team aus 4 Co-Foundern, gestartet Januar 2026",
+        "Gebaut auf TikTok Shop Seller, Developer & Business APIs"
+      ],
+      "tags": ["B2B SaaS", "AI", "TikTok Shop"],
+      "websiteLabel": "spreadableai.com"
+    },
+    "experience": {
+      "sectionLabel": "Erfahrung & Hintergrund",
+      "heading": "Der Weg bisher",
+      "items": [
+        {
+          "period": "Jan 2026–heute",
+          "title": "Co-Founder",
+          "place": "SpreadableAI, Berlin",
+          "description": "Baue ein KI-TikTok-Shop-Betriebssystem für Agenturen. Leite Sales und Product mit einem Team aus vier Co-Foundern."
+        },
+        {
+          "period": "Jan 2025–Dez 2025",
+          "title": "Project Management Assistant",
+          "place": "MBition (Mercedes-Benz), Berlin",
+          "description": "Unterstützte das PMO bei großen Automotive-Infotainment-Software-Rollouts. Koordinierte PI Planning, cross-funktionale Engineering-Teams, Risikominderung und Stakeholder-Kommunikation."
+        },
+        {
+          "period": "Aug 2021–Dez 2025",
+          "title": "BSc Digital Product Management",
+          "place": "CODE University of Applied Sciences, Berlin",
+          "description": "Bachelor in Digital Product Management. Abschluss Dezember 2025."
+        },
+        {
+          "period": "Sep 2022–Aug 2023",
+          "title": "Marketing Assistant",
+          "place": "CODE University of Applied Sciences, Berlin",
+          "description": "Managed CODEs Instagram und erstellte Content. Organisierte Events auf dem Campus."
+        },
+        {
+          "period": "Mai 2021–Aug 2022",
+          "title": "Mathe- & Englisch-Nachhilfe",
+          "place": "Selbstständig, Seoul",
+          "description": "Gab Nachhilfe in Mathe und Englisch, während ich mich aufs Studium im Ausland vorbereitete."
+        },
+        {
+          "period": "2021",
+          "title": "Ankunft in Berlin",
+          "place": "Berlin, Deutschland",
+          "description": "Zog von TLV um, um an der CODE University zu starten. Lernte Deutsch von null — C1 in drei Jahren, rein aus persönlichem Antrieb."
+        },
+        {
+          "period": "2019–2021",
+          "title": "IB Diploma",
+          "place": "Eastern Mediterranean International School, Tel Aviv",
+          "description": "Dance, Computer Science, Mathematics, Global Politics."
+        },
+        {
+          "period": "2017–2019",
+          "title": "IGCSE",
+          "place": "EF Academy",
+          "description": "IGCSE abgeschlossen, bevor ich für das IB Diploma nach Tel Aviv zog."
+        },
+        {
+          "period": "2017",
+          "title": "Korea verlassen mit 15",
+          "place": "Vereinigtes Königreich",
+          "description": "Überzeugte meine Eltern, mich ins Ausland studieren zu lassen. Koffer und Plan — der Anfang von allem."
+        }
+      ]
+    },
+    "skills": {
+      "sectionLabel": "Skills",
+      "heading": "Was ich mitbringe",
+      "groups": [
+        {
+          "title": "Product & Strategy",
+          "skills": [
+            "Product Management",
+            "Jira & Roadmapping",
+            "PI Planning",
+            "Stakeholder Comms",
+            "B2B Sales",
+            "Risk Management",
+            "Microsoft Excel"
+          ]
+        },
+        {
+          "title": "Building & Technical",
+          "skills": [
+            "Cursor / Vibe Coding",
+            "Next.js & React",
+            "TikTok Shop APIs",
+            "Seller & Developer API",
+            "AI / LLM Integration"
+          ]
+        },
+        {
+          "title": "Content & Languages",
+          "skills": [
+            "Social Media Growth",
+            "Short-form Video",
+            "Koreanisch (Muttersprache)",
+            "Englisch (Fließend)",
+            "Deutsch (C1)"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Lass uns reden.",
+      "subtext": "SpreadableAI, eine Collab oder einfach ein Gespräch. Ich bin offen für alles. Ich antworte schnell."
+    }
+  },
+  "creator": {
+    "hero": {
+      "label": "Content Creator · Berlin · @growjungwoo",
+      "heading": "Building in public.\nOhne Filter.",
+      "description": "Über ein Jahr lang habe ich jeden Tag gepostet, um meine Stimme zu finden. Koreaner in Berlin — teile kulturelle Insights zwischen Korea und Deutschland, manchmal Tipps und mein Leben.",
+      "primaryCtaLabel": "Meinen Content ansehen →",
+      "secondaryCtaLabel": "Zusammenarbeiten →"
+    },
+    "about": {
+      "sectionLabel": "Als Creator",
+      "quote": "Ich mache Content für mein deutsches Publikum auf Deutsch. Aktiv auf IG, TikTok und YouTube. Gelegentlich auch Koreanisch und Englisch."
+    },
+    "portfolio": {
+      "sectionLabel": "Content-Portfolio",
+      "heading": "Ausgewählte Arbeiten",
+      "footerNote": "Mehr auf TikTok, Instagram und YouTube — @growjungwoo.",
+      "items": [
+        {
+          "title": "4 Dinge, die Deutsche in Korea als unhöflich empfinden",
+          "stat": ":))"
+        },
+        {
+          "title": "Koreaner lieben Sunsticks",
+          "stat": "ABIB Sunsticks vorgestellt"
+        },
+        {
+          "title": "6 Unterschiede in der koreanischen Esskultur",
+          "stat": "Unterschiede zwischen koreanischer und deutscher Esskultur"
+        },
+        {
+          "title": "meine deutsch-lern-reise",
+          "stat": "wie ich in 3 Jahren Deutsch auf C1 gelernt habe"
+        },
+        {
+          "title": "was ich von Korea nach Deutschland mitgebracht habe",
+          "stat": "koreanische Lebensmittel, die man in Korea kaufen sollte"
+        },
+        {
+          "title": "Lass uns ins Kino in Korea gehen",
+          "stat": "was man im koreanischen Kino essen kann"
+        }
+      ]
+    },
+    "platforms": {
+      "sectionLabel": "Plattformen & Reichweite",
+      "heading": "Wo ich create",
+      "items": [
+        {
+          "focus": "Kulturelle Insights als Koreaner in Deutschland",
+          "cadence": "Short-form · 2× pro Woche"
+        },
+        {
+          "focus": "Koreanische Produkte in Deutschland vorstellen",
+          "cadence": "Short-form · 2× pro Woche"
+        },
+        {
+          "focus": "Kulturelle Insights als Koreaner in Deutschland",
+          "cadence": "Short & Long-forms gemischt · 2–3× pro Woche"
+        }
+      ]
+    },
+    "brands": {
+      "sectionLabel": "Was Brands bekommen",
+      "heading": "Warum mit mir arbeiten",
+      "items": [
+        {
+          "title": "Content Creation",
+          "description": "Natürliche Talking-Videos für TikTok, Instagram und YouTube. Koreanisch-deutsche Perspektive. Ich teile spannende Insights mit meinem deutschen Publikum."
+        },
+        {
+          "title": "Audience",
+          "description": "Überwiegend deutsches Publikum, aber auch Koreanisch und Englisch. 70 % meiner Audience sind weiblich, Altersrange 18–50."
+        },
+        {
+          "title": "Multilingual",
+          "description": "Content meist auf Deutsch, aber auch Koreanisch und Englisch. Drei Märkte — freundlich, ehrlich und aus echter Erfahrung gebaut."
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Lass uns zusammenarbeiten.",
+      "subtext": "Brand-Collabs, Sponsored Content, Affiliate-Partnerschaften oder einfach ein Gespräch. Schreib mir direkt. Sag mir, was du baust, und wir schauen, ob es passt.",
+      "replyNote": "Ich antworte schnell."
+    }
+  }
+}

@@ -2,46 +2,13 @@ import fs from "fs/promises";
 import path from "path";
 import { defaultContent } from "./default-content";
 import { setAtPath } from "./content-path";
+import { mergeDeep } from "./merge-content";
 import { SiteContent } from "./content-types";
 
 const CONTENT_FILE = path.join(process.cwd(), "data", "content.json");
 
 function mergeWithDefaults(content: Partial<SiteContent>): SiteContent {
-  return {
-    ...defaultContent,
-    ...content,
-    shared: { ...defaultContent.shared, ...content.shared },
-    images: { ...defaultContent.images, ...content.images },
-    founder: {
-      ...defaultContent.founder,
-      ...content.founder,
-      hero: { ...defaultContent.founder.hero, ...content.founder?.hero },
-      about: { ...defaultContent.founder.about, ...content.founder?.about },
-      building: { ...defaultContent.founder.building, ...content.founder?.building },
-      experience: {
-        ...defaultContent.founder.experience,
-        ...content.founder?.experience,
-      },
-      skills: { ...defaultContent.founder.skills, ...content.founder?.skills },
-      contact: { ...defaultContent.founder.contact, ...content.founder?.contact },
-    },
-    creator: {
-      ...defaultContent.creator,
-      ...content.creator,
-      hero: { ...defaultContent.creator.hero, ...content.creator?.hero },
-      about: { ...defaultContent.creator.about, ...content.creator?.about },
-      portfolio: {
-        ...defaultContent.creator.portfolio,
-        ...content.creator?.portfolio,
-      },
-      platforms: {
-        ...defaultContent.creator.platforms,
-        ...content.creator?.platforms,
-      },
-      brands: { ...defaultContent.creator.brands, ...content.creator?.brands },
-      contact: { ...defaultContent.creator.contact, ...content.creator?.contact },
-    },
-  };
+  return mergeDeep(defaultContent, content);
 }
 
 async function ensureContentFile(): Promise<void> {

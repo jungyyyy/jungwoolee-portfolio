@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import SiteEffects from "@/components/SiteEffects";
+import { LocaleProvider } from "@/components/LocaleProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -56,7 +57,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-body antialiased">
-        <SiteEffects>{children}</SiteEffects>
+        <LocaleProvider>
+          <SiteEffects>{children}</SiteEffects>
+        </LocaleProvider>
       </body>
     </html>
   );

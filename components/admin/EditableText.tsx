@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, ElementType } from "react";
+import { useTranslation } from "react-i18next";
 import { useContent } from "./ContentProvider";
 
 interface EditableTextProps {
@@ -18,6 +19,7 @@ export default function EditableText({
   className = "",
   multiline = false,
 }: EditableTextProps) {
+  const { t } = useTranslation();
   const { isAdmin, saveContent } = useContent();
   const [editing, setEditing] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -74,7 +76,7 @@ export default function EditableText({
         </Tag>
         {saved && (
           <span className="absolute -top-6 left-0 text-xs text-accent whitespace-nowrap">
-            Saved ✓
+            {t("editable.saved")}
           </span>
         )}
       </span>
@@ -98,14 +100,14 @@ export default function EditableText({
           disabled={saving}
           className="rounded-pill bg-accent px-3 py-1 text-xs font-medium text-background hover:opacity-90 disabled:opacity-50"
         >
-          {saving ? "Saving…" : "Save"}
+          {saving ? t("editable.saving") : t("editable.save")}
         </button>
         <button
           type="button"
           onClick={() => setEditing(false)}
           className="text-xs text-secondary hover:text-primary"
         >
-          Cancel
+          {t("editable.cancel")}
         </button>
       </span>
     </span>

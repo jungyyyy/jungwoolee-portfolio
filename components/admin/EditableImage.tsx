@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import { useContent } from "./ContentProvider";
 
 interface EditableImageProps {
@@ -25,12 +26,14 @@ export default function EditableImage({
   className = "",
   wrapperClassName = "",
   priority = false,
-  uploadLabel = "Upload photo",
+  uploadLabel,
 }: EditableImageProps) {
+  const { t } = useTranslation();
   const { isAdmin, uploadImage } = useContent();
   const inputRef = useRef<HTMLInputElement>(null);
   const [uploading, setUploading] = useState(false);
   const [saved, setSaved] = useState(false);
+  const label = uploadLabel ?? t("editable.uploadPhoto");
 
   const handleFile = async (file: File) => {
     setUploading(true);
@@ -63,7 +66,7 @@ export default function EditableImage({
               disabled={uploading}
               className="rounded-pill bg-accent px-4 py-2 text-xs font-medium text-background hover:opacity-90 disabled:opacity-50 pointer-events-auto"
             >
-              {uploading ? "Uploading…" : uploadLabel}
+              {uploading ? t("editable.uploading") : label}
             </button>
           </div>
           <input
@@ -82,7 +85,7 @@ export default function EditableImage({
 
       {saved && (
         <span className="absolute top-2 right-2 rounded-pill bg-surface border border-accent/30 px-2 py-1 text-xs text-accent">
-          Saved ✓
+          {t("editable.saved")}
         </span>
       )}
     </div>

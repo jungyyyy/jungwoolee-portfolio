@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Jungwoo Lee — Founder & Creator",
+    "description": "24-year-old Korean co-founder in Berlin. Building SpreadableAI — AI for TikTok Shop agencies. Content creator."
+  },
+  "nav": {
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "founder": {
+      "about": "About",
+      "building": "Building",
+      "experience": "Experience",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "creator": {
+      "about": "About",
+      "portfolio": "Portfolio",
+      "platforms": "Platforms",
+      "brands": "For Brands",
+      "contact": "Contact"
+    }
+  },
+  "modeToggle": {
+    "founder": "Founder & PM",
+    "creator": "Content Creator"
+  },
+  "common": {
+    "loading": "Loading…",
+    "name": "Jungwoo Lee"
+  },
+  "hero": {
+    "altDefault": "Jungwoo Lee",
+    "altCreator": "Jungwoo Lee — Content Creator",
+    "uploadHero": "Upload hero photo"
+  },
+  "about": {
+    "altPhoto": "Jungwoo Lee",
+    "uploadAbout": "Upload about photo"
+  },
+  "building": {
+    "logoAlt": "SpreadableAI logo",
+    "uploadLogo": "Upload logo"
+  },
+  "portfolio": {
+    "preview": "Preview",
+    "watchPreview": "Watch preview",
+    "viewOn": "View on {{platform}}",
+    "closePreview": "Close preview",
+    "previewUnavailable": "Preview unavailable for this link. Open it directly on {{platform}}.",
+    "openOn": "Open on {{platform}} →"
+  },
+  "editable": {
+    "uploadPhoto": "Upload photo",
+    "uploading": "Uploading…",
+    "clickToEdit": "Click to edit",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "saved": "Saved ✓"
+  },
+  "admin": {
+    "editModeOn": "✏️ Edit Mode ON",
+    "logout": "Logout",
+    "label": "Admin",
+    "signIn": "Sign in",
+    "password": "Password",
+    "passwordPlaceholder": "Password",
+    "enterEditMode": "Enter edit mode",
+    "signingIn": "Signing in…",
+    "incorrectPassword": "Incorrect password",
+    "genericError": "Something went wrong. Try again."
+  }
+}

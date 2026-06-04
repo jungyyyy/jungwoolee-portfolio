@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import SectionWrapper from "../SectionWrapper";
 import FadeIn, { StaggerItem } from "../FadeIn";
 import EditableText from "../admin/EditableText";
@@ -18,6 +19,7 @@ function PortfolioCard({
   index: number;
   onWatch: (item: PortfolioItem) => void;
 }) {
+  const { t } = useTranslation();
   const supportsPreview = canEmbed(item.url, item.platform);
 
   const handleWatch = () => {
@@ -57,7 +59,7 @@ function PortfolioCard({
           </span>
           {supportsPreview && (
             <span className="absolute bottom-3 right-3 rounded-pill bg-accent/10 border border-accent/20 px-3 py-1 text-xs text-accent">
-              Preview
+              {t("portfolio.preview")}
             </span>
           )}
         </div>
@@ -83,7 +85,9 @@ function PortfolioCard({
             }}
             className="group/link inline-flex items-center mt-4 text-sm text-accent transition-opacity hover:opacity-80"
           >
-            {supportsPreview ? "Watch preview" : `View on ${item.platform}`}
+            {supportsPreview
+              ? t("portfolio.watchPreview")
+              : t("portfolio.viewOn", { platform: item.platform })}
             <span className="ml-1 transition-transform duration-200 group-hover/link:translate-x-1">
               →
             </span>

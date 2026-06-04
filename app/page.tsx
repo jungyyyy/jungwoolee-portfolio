@@ -20,12 +20,14 @@ import ContentPortfolio from "@/components/creator/ContentPortfolio";
 import PlatformsReach from "@/components/creator/PlatformsReach";
 import WhatBrandsGet from "@/components/creator/WhatBrandsGet";
 import CreatorContact from "@/components/creator/CreatorContact";
+import DocumentMeta from "@/components/DocumentMeta";
 
 function PortfolioContent() {
   const [mode, setMode] = useState<Mode>("founder");
 
   return (
     <>
+      <DocumentMeta />
       <Navigation mode={mode} onModeChange={setMode} />
 
       <main>

@@ -5,10 +5,14 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useMemo,
   useState,
   ReactNode,
 } from "react";
+import { useTranslation } from "react-i18next";
 import EditModeBadge from "./EditModeBadge";
+import { useLocale } from "@/components/LocaleProvider";
+import { localizeSiteContent } from "@/lib/localize-content";
 import { SiteContent } from "@/lib/content-types";
 
 interface ContentContextValue {
@@ -23,9 +27,17 @@ interface ContentContextValue {
 const ContentContext = createContext<ContentContextValue | null>(null);
 
 export function ContentProvider({ children }: { children: ReactNode }) {
-  const [content, setContent] = useState<SiteContent | null>(null);
+  const { t } = useTranslation();
+  const { locale } = useLocale();
+  const [baseContent, setBaseContent] = useState<SiteContent | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const content = useMemo(() => {
+    if (!baseContent) return null;
+    if (isAdmin) return baseContent;
+    return localizeSiteContent(baseContent, locale);
+  }, [baseContent, locale, isAdmin]);
 
   useEffect(() => {
     async function load() {
@@ -36,10 +48,10 @@ export function ContentProvider({ children }: { children: ReactNode }) {
         ]);
         const contentData = await contentRes.json();
         const sessionData = await sessionRes.json();
-        setContent(contentData);
+        setBaseContent(contentData);
         setIsAdmin(sessionData.admin === true);
       } catch {
-        setContent(null);
+        setBaseContent(null);
       } finally {
         setLoading(false);
       }
@@ -55,7 +67,7 @@ export function ContentProvider({ children }: { children: ReactNode }) {
     });
     if (res.ok) {
       const data = await res.json();
-      setContent(data.content);
+      setBaseContent(data.content);
       return true;
     }
     return false;
@@ -73,7 +85,7 @@ export function ContentProvider({ children }: { children: ReactNode }) {
 
     if (res.ok) {
       const data = await res.json();
-      setContent(data.content);
+      setBaseContent(data.content);
       return true;
     }
     return false;
@@ -87,7 +99,7 @@ export function ContentProvider({ children }: { children: ReactNode }) {
   if (loading || !content) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
-        <p className="text-secondary text-sm">Loading…</p>
+        <p className="text-secondary text-sm">{t("common.loading")}</p>
       </div>
     );
   }

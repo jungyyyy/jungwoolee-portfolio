@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { Mode } from "@/lib/content";
 
 interface ModeToggleProps {
@@ -8,13 +9,14 @@ interface ModeToggleProps {
   onModeChange: (mode: Mode) => void;
 }
 
-const modes: { value: Mode; label: string }[] = [
-  { value: "founder", label: "Founder & PM" },
-  { value: "creator", label: "Content Creator" },
-];
-
 export default function ModeToggle({ mode, onModeChange }: ModeToggleProps) {
+  const { t } = useTranslation();
   const activeIndex = mode === "founder" ? 0 : 1;
+
+  const modes: { value: Mode; labelKey: string }[] = [
+    { value: "founder", labelKey: "modeToggle.founder" },
+    { value: "creator", labelKey: "modeToggle.creator" },
+  ];
 
   return (
     <div className="relative flex items-center rounded-pill border border-border bg-surface p-1 max-w-full">
@@ -27,7 +29,7 @@ export default function ModeToggle({ mode, onModeChange }: ModeToggleProps) {
         }}
         transition={{ type: "spring", stiffness: 400, damping: 30 }}
       />
-      {modes.map(({ value, label }) => (
+      {modes.map(({ value, labelKey }) => (
         <button
           key={value}
           onClick={() => onModeChange(value)}
@@ -35,7 +37,7 @@ export default function ModeToggle({ mode, onModeChange }: ModeToggleProps) {
             mode === value ? "text-accent" : "text-secondary hover:text-primary"
           }`}
         >
-          {label}
+          {t(labelKey)}
           {mode === value && (
             <motion.span
               layoutId="mode-underline"

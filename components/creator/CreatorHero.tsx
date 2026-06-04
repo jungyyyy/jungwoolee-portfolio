@@ -1,9 +1,11 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import { HeroContent, HeroPhoto } from "../HeroShared";
 import { useContent } from "../admin/ContentProvider";
 
 export default function CreatorHero() {
+  const { t } = useTranslation();
   const { content } = useContent();
 
   return (
@@ -23,7 +25,7 @@ export default function CreatorHero() {
         <div className="lg:col-span-2 order-1 lg:order-2">
           <HeroPhoto
             contentKey="images.creatorHero"
-            alt="Jungwoo Lee — Content Creator"
+            alt={t("hero.altCreator")}
             className="max-w-sm mx-auto lg:max-w-none lg:ml-auto"
           />
         </div>

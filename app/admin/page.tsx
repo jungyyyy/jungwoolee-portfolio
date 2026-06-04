@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslation } from "react-i18next";
 
 export default function AdminLoginPage() {
+  const { t } = useTranslation();
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -23,14 +25,14 @@ export default function AdminLoginPage() {
 
       if (!res.ok) {
         const data = await res.json();
-        setError(data.error || "Incorrect password");
+        setError(data.error || t("admin.incorrectPassword"));
         return;
       }
 
       router.push("/");
       router.refresh();
     } catch {
-      setError("Something went wrong. Try again.");
+      setError(t("admin.genericError"));
     } finally {
       setLoading(false);
     }
@@ -40,23 +42,23 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center px-6 bg-background">
       <div className="w-full max-w-sm">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">
-          Admin
+          {t("admin.label")}
         </p>
         <h1 className="font-heading text-3xl font-bold text-primary heading-display mb-8">
-          Sign in
+          {t("admin.signIn")}
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="password" className="sr-only">
-              Password
+              {t("admin.password")}
             </label>
             <input
               id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
+              placeholder={t("admin.passwordPlaceholder")}
               autoComplete="current-password"
               className="w-full rounded-card border border-border bg-surface px-4 py-3 text-primary placeholder:text-secondary focus:border-accent/50 focus:outline-none"
             />
@@ -71,7 +73,7 @@ export default function AdminLoginPage() {
             disabled={loading || !password}
             className="w-full rounded-pill bg-accent px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90 disabled:opacity-50"
           >
-            {loading ? "Signing in…" : "Enter edit mode"}
+            {loading ? t("admin.signingIn") : t("admin.enterEditMode")}
           </button>
         </form>
       </div>
