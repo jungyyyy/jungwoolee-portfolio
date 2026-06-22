@@ -19,13 +19,13 @@ const playfair = Playfair_Display({
 const siteUrl = "https://jungwoolee.com";
 
 export const metadata: Metadata = {
-  title: "Jungwoo Lee — Founder & Creator",
+  title: "Jungwoo Lee — Sales, Marketing & Customer Success",
   description:
-    "24-year-old Korean co-founder in Berlin. Building SpreadableAI — AI for TikTok Shop agencies. Content creator.",
+    "24-year-old Korean based in Hamburg. Experienced in B2B sales, marketing, and customer-facing roles. Open to new opportunities.",
   openGraph: {
-    title: "Jungwoo Lee — Founder & Creator",
+    title: "Jungwoo Lee — Sales, Marketing & Customer Success",
     description:
-      "24-year-old Korean founder in Berlin. Building SpreadableAI. TikTok Shop AI OS.",
+      "24-year-old Korean based in Hamburg. B2B sales, marketing, and customer success. Open to new opportunities.",
     url: siteUrl,
     siteName: "Jungwoo Lee",
     images: [
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jungwoo Lee — Founder & Creator",
+    title: "Jungwoo Lee — Sales, Marketing & Customer Success",
     description:
-      "24-year-old Korean founder in Berlin. Building SpreadableAI. TikTok Shop AI OS.",
+      "24-year-old Korean based in Hamburg. B2B sales, marketing, and customer success. Open to new opportunities.",
     images: ["/images/hero.png"],
   },
   metadataBase: new URL(siteUrl),
