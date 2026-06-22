@@ -1,58 +1,61 @@
 {
   "founder": {
     "hero": {
-      "label": "Co-Founder · Berlin · SpreadableAI",
-      "heading": "Mit 15 bin ich aus Korea weg,\nmit einem Koffer und einem Plan.",
-      "description": "Heute baue ich KI für das E-Commerce-Ökosystem. Co-Founder von SpreadableAI — einem TikTok-Shop-Betriebssystem für Agenturen & Brands. Koreaner in Berlin. Besessen vom Bauen.",
-      "primaryCtaLabel": "Sieh, was ich baue →",
+      "label": "Sales & Marketing · Customer Success",
+      "heading": "Mit 15 habe ich Korea verlassen.\nSeitdem verkaufe ich, baue auf und bringe Dinge zum Wachsen.",
+      "description": "Product-Management-Absolvent. Erfahrung in B2B-Sales, Marketing und kundenbezogenen Rollen in Startups und Unternehmen. Aktuell in Hamburg, offen für neue Möglichkeiten.",
+      "primaryCtaLabel": "Sieh, was ich gemacht habe →",
       "secondaryCtaLabel": "Schreib mir →"
     },
     "about": {
       "sectionLabel": "Über mich",
-      "quoteLine1": "Mit 15 bin ich allein aus Korea weg.",
-      "quoteLine2": "Seitdem baue ich.",
+      "quoteLine1": "Mit 15 habe ich Korea verlassen.",
+      "quoteLine2": "Seitdem verkaufe ich, baue auf und bringe Dinge zum Wachsen.",
       "paragraphs": [
-        "Ich bin Jungwoo Lee — 24, Koreaner, in Berlin. Co-Founder von SpreadableAI, einem KI-Betriebssystem für TikTok-Shop-Agenturen. Mit 15 bin ich allein aus Korea weg, habe meine Eltern überzeugt, und seitdem kläre ich alles selbst. UK, Israel, Deutschland — vier Länder, bevor ich 25 wurde.",
-        "Ich habe im Dezember 2025 an der CODE University of Applied Sciences Digital Product Management abgeschlossen und bin im Januar 2026 Vollzeit bei SpreadableAI. Ich vibe-code mit Cursor, leite Sales und Product, und baue etwas, das groß werden soll. Finanzielle Freiheit ist kein Schimpfwort — das ist der Punkt.",
-        "In meinen ersten Monaten in Berlin habe ich 20 kg zugenommen. Saisonale Depression hat hart zugeschlagen. In sechs Monaten habe ich alles wieder abgenommen und bin zurückgekommen. Das verstecke ich nicht. Ich lerne schnell, bewege mich schnell, und stehe schnell wieder auf."
+        "Ich bin Jungwoo Lee – 24 Jahre alt, Koreaner, aktuell in Berlin, bald in Hamburg.",
+        "Im Dezember 2025 habe ich meinen Bachelor in Digital Product Management an der CODE University of Applied Sciences abgeschlossen. Seitdem war ich tief im B2B-Sales, Marketing, Go-to-Market-Strategie und Customer Success – ich habe den Vertrieb eines Startups geleitet, Pilotpartner gewonnen und gelernt, was es wirklich braucht, damit Menschen Ja sagen.",
+        "Davor habe ich ein Jahr lang bei MBition (Mercedes-Benz) große Software-Rollouts im Automotive-Bereich unterstützt – mit Koordination zwischen Engineering, Produkt und Business. Dort habe ich verstanden, wie Enterprise-Teams wirklich funktionieren.",
+        "Mit 15 habe ich Korea alleine verlassen. UK, Tel Aviv, Deutschland – vier Länder vor meinem 25. Geburtstag. Ich spreche drei Sprachen. Ich lerne schnell, handle schnell und stehe schnell wieder auf.",
+        "Ich suche jetzt Rollen im Bereich Customer Success, Sales oder Marketing, wo ich sowohl den Antrieb als auch die Struktur einbringen kann."
       ]
     },
     "stats": [
-      { "value": "4", "label": "Länder vor dem 25." },
-      { "value": "15", "label": "Alter, als ich Korea verließ" },
+      { "value": "4", "label": "Länder vor 25" },
+      { "value": "15", "label": "Alter, als ich Korea verlassen habe" },
       { "value": "3", "label": "Sprachen (EN, KO, DE)" },
-      { "value": "4", "label": "Co-Founder bei SpreadableAI" }
+      { "value": "1 Jahr", "label": "B2B-Sales-Erfahrung" }
     ],
     "building": {
-      "sectionLabel": "Aktuelles Unternehmen",
-      "title": "SpreadableAI",
-      "subtitle": "TikTok Shop KI-Betriebssystem für Agenturen",
-      "description": "TikTok Shop soll 2026 voraussichtlich 112 Mrd. $ GMV erreichen. 90 % der Sales kommen von Creator-Content — aber Agenturen managen 5.000+ Creator ohne skalierbare Möglichkeit, Feedback zu geben. Wir automatisieren diesen Feedback-Loop mit KI.",
+      "sectionLabel": "Was ich gemacht habe",
+      "title": "B2B Sales, Go-to-Market & Produktmanagement",
+      "subtitle": "Frühphasiges Startup, Berlin · 2026",
+      "description": "Verantwortlich für Vertrieb, Produktstrategie und Go-to-Market eines KI-basierten B2B-SaaS-Produkts für TikTok-Shop-Agenturen. Team von 4 Co-Foundern geleitet.",
       "bullets": [
-        "Co-Founder — leite Sales und Product",
-        "Pilot-Partner unter Vertrag",
-        "50+ auf der Warteliste — Produkt noch in Entwicklung",
-        "Team aus 4 Co-Foundern, gestartet Januar 2026",
-        "Gebaut auf TikTok Shop Seller, Developer & Business APIs"
+        "Pilotpartner eigenständig akquiriert",
+        "Warteliste mit 50+ B2B-Interessenten aufgebaut und verwaltet",
+        "Outbound-Outreach, Discovery Calls und Vertragsverhandlungen durchgeführt",
+        "ICP und Positionierung von Grund auf definiert",
+        "Produktstrategie, Roadmap und Feature-Prioritäten verantwortet",
+        "Cross-funktionales Team aus Produkt, Tech und Sales koordiniert"
       ],
-      "tags": ["B2B SaaS", "AI", "TikTok Shop"],
-      "websiteLabel": "spreadableai.com"
+      "tags": ["B2B Sales", "Go-to-Market", "AI SaaS"],
+      "websiteLabel": ""
     },
     "experience": {
       "sectionLabel": "Erfahrung & Hintergrund",
       "heading": "Der Weg bisher",
       "items": [
         {
-          "period": "Jan 2026–heute",
-          "title": "Co-Founder",
-          "place": "SpreadableAI, Berlin",
-          "description": "Baue ein KI-TikTok-Shop-Betriebssystem für Agenturen. Leite Sales und Product mit einem Team aus vier Co-Foundern."
+          "period": "Jan 2026–Jun 2026",
+          "title": "Sales & Go-to-Market Lead",
+          "place": "Frühphasiges KI-SaaS-Startup, Berlin",
+          "description": "B2B-Vertrieb und Go-to-Market für ein KI-Produkt für TikTok-Shop-Agenturen geleitet. Pilotpartner akquiriert, Warteliste mit 50+ Kontakten aufgebaut, Outbound und Discovery Calls durchgeführt, ICP und Positionierung definiert."
         },
         {
           "period": "Jan 2025–Dez 2025",
-          "title": "Project Management Assistant",
+          "title": "Werkstudent Projektmanagement",
           "place": "MBition (Mercedes-Benz), Berlin",
-          "description": "Unterstützte das PMO bei großen Automotive-Infotainment-Software-Rollouts. Koordinierte PI Planning, cross-funktionale Engineering-Teams, Risikominderung und Stakeholder-Kommunikation."
+          "description": "Unterstützung des PMO bei der Entwicklung und dem Rollout großer Automotive-Infotainment-Software. Koordination von PI-Planning, cross-funktionalen Engineering- und Produktteams, Risikomanagement sowie Stakeholder-Kommunikation zwischen technischen und nicht-technischen Bereichen."
         },
         {
           "period": "Aug 2021–Dez 2025",
@@ -64,7 +67,7 @@
           "period": "Sep 2022–Aug 2023",
           "title": "Marketing Assistant",
           "place": "CODE University of Applied Sciences, Berlin",
-          "description": "Managed CODEs Instagram und erstellte Content. Organisierte Events auf dem Campus."
+          "description": "Instagram-Kanal und Content-Strategie der Universität verwaltet. Engagement durch konsistenten Short-form-Content gesteigert. Campusveranstaltungen organisiert."
         },
         {
           "period": "Mai 2021–Aug 2022",
@@ -103,47 +106,51 @@
       "heading": "Was ich mitbringe",
       "groups": [
         {
-          "title": "Product & Strategy",
+          "title": "Sales & Customer Success",
           "skills": [
-            "Product Management",
+            "B2B Sales",
+            "Outbound (LinkedIn)",
+            "Discovery & Closing",
+            "CRM & Pipeline-Management",
+            "Customer Onboarding",
+            "Pilotpartner-Management"
+          ]
+        },
+        {
+          "title": "Marketing & Content",
+          "skills": [
+            "Social-Media-Strategie",
+            "Short-form Video",
+            "Content Creation",
+            "Instagram / TikTok / LinkedIn",
+            "Kampagnenplanung",
+            "Copywriting"
+          ]
+        },
+        {
+          "title": "Produkt & Operations",
+          "skills": [
+            "Produktmanagement",
             "Jira & Roadmapping",
             "PI Planning",
-            "Stakeholder Comms",
-            "B2B Sales",
-            "Risk Management",
-            "Microsoft Excel"
-          ]
-        },
-        {
-          "title": "Building & Technical",
-          "skills": [
+            "Stakeholder-Kommunikation",
+            "Risikomanagement",
+            "Microsoft Excel",
             "Cursor / Vibe Coding",
             "Next.js & React",
-            "TikTok Shop APIs",
-            "Seller & Developer API",
-            "AI / LLM Integration"
-          ]
-        },
-        {
-          "title": "Content & Languages",
-          "skills": [
-            "Social Media Growth",
-            "Short-form Video",
-            "Koreanisch (Muttersprache)",
-            "Englisch (Fließend)",
-            "Deutsch (C1)"
+            "KI / LLM-Integration"
           ]
         }
       ]
     },
     "contact": {
       "heading": "Lass uns reden.",
-      "subtext": "SpreadableAI, eine Collab oder einfach ein Gespräch. Ich bin offen für alles. Ich antworte schnell."
+      "subtext": "Offen für Rollen im Bereich Customer Success, Sales und Marketing in Hamburg oder remote. Ich antworte schnell."
     }
   },
   "creator": {
     "hero": {
-      "label": "Content Creator · Berlin · @growjungwoo",
+      "label": "Content Creator · Berlin → Hamburg · @growjungwoo",
       "heading": "Building in public.\nOhne Filter.",
       "description": "Über ein Jahr lang habe ich jeden Tag gepostet, um meine Stimme zu finden. Koreaner in Berlin — teile kulturelle Insights zwischen Korea und Deutschland, manchmal Tipps und mein Leben.",
       "primaryCtaLabel": "Meinen Content ansehen →",
@@ -151,7 +158,7 @@
     },
     "about": {
       "sectionLabel": "Als Creator",
-      "quote": "Ich mache Content für mein deutsches Publikum auf Deutsch. Aktiv auf IG, TikTok und YouTube. Gelegentlich auch Koreanisch und Englisch."
+      "quote": "Ich erstelle Inhalte auf Deutsch für ein deutschsprachiges Publikum. Aktiv auf Instagram, TikTok und YouTube. Gelegentlich auch Inhalte auf Koreanisch und Englisch."
     },
     "portfolio": {
       "sectionLabel": "Content-Portfolio",
@@ -221,8 +228,8 @@
       ]
     },
     "contact": {
-      "heading": "Lass uns zusammenarbeiten.",
-      "subtext": "Brand-Collabs, Sponsored Content, Affiliate-Partnerschaften oder einfach ein Gespräch. Schreib mir direkt. Sag mir, was du baust, und wir schauen, ob es passt.",
+      "heading": "Arbeite mit mir.",
+      "subtext": "Offen für Brand-Collabs, Sponsored Content oder Affiliate-Partnerschaften.",
       "replyNote": "Ich antworte schnell."
     }
   }

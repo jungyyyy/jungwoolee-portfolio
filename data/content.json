@@ -17,20 +17,22 @@
   },
   "founder": {
     "hero": {
-      "label": "Co-founder · Berlin · SpreadableAI",
-      "heading": "I left Korea at 15\nwith a suitcase and a plan.",
-      "description": "Now I'm building AI for the e-commerce ecosystem. Co-founder of SpreadableAI — a TikTok Shop operating system for agencies & brands. Korean in Berlin. Obsessed with building stuff.",
-      "primaryCtaLabel": "See what I'm building →",
+      "label": "Sales & Marketing · Customer Success",
+      "heading": "I left Korea at 15.\nI've been selling, building, and growing things ever since.",
+      "description": "Product Management graduate. Experienced in B2B sales, marketing, and customer-facing roles across startups and enterprise. Based in Hamburg, open to opportunities.",
+      "primaryCtaLabel": "See what I've done →",
       "secondaryCtaLabel": "Get in touch →"
     },
     "about": {
       "sectionLabel": "About",
-      "quoteLine1": "I left Korea alone at 15.",
-      "quoteLine2": "I've been building ever since.",
+      "quoteLine1": "I left Korea at 15.",
+      "quoteLine2": "I've been selling, building, and growing things ever since.",
       "paragraphs": [
-        "I'm Jungwoo Lee — 24, Korean, based in Berlin. I'm the co-founder of SpreadableAI, an AI operating system for TikTok Shop agencies. I left Korea alone at 15, convinced my own parents to let me go, and I've been figuring it out on my own since. UK, Israel, Germany — four countries before turning 25.",
-        "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025 and went full-time on SpreadableAI in January 2026. I vibe-code with Cursor, lead sales and product, and I'm building something I want to be big. Financial freedom isn't a dirty word — it's the point.",
-        "I gained 20kg in my first months in Berlin. Seasonal depression hit hard. I lost all of it in six months and got back up. I don't hide that. I learn fast, move fast, and I get up fast."
+        "I'm Jungwoo Lee — 24, Korean, based in Berlin, relocating to Hamburg currently.",
+        "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025. Since then, I've been deep in the world of B2B sales and marketing, go-to-market strategy, and customer success, leading sales at a startup, signing pilot partners, and learning what it actually takes to get people to say yes.",
+        "Before that, I spent a year at MBition (Mercedes-Benz) supporting large-scale software project rollouts, coordinating across engineering, product, and business stakeholders. That's where I learned how enterprise teams actually operate.",
+        "I left Korea alone at 15. UK, Tel Aviv, Germany — four countries before 25. I speak three languages. I learn fast, move fast, and I get up fast.",
+        "I'm now looking for roles in customer success, sales, or marketing where I can bring both the hustle and the structure."
       ]
     },
     "stats": [
@@ -44,48 +46,48 @@
       },
       {
         "value": "3",
-        "label": "Languages I speak (EN, KO, DE)"
+        "label": "Languages (EN, KO, DE)"
       },
       {
-        "value": "4",
-        "label": "Co-founders at SpreadableAI"
+        "value": "1yr",
+        "label": "B2B Sales experience"
       }
     ],
     "building": {
-      "sectionLabel": "Current Company",
-      "title": "SpreadableAI",
-      "subtitle": "TikTok Shop AI Operating System for Agencies",
-      "description": "TikTok Shop is expected to hit $112B GMV in 2026. 90% of sales come from creator content, but agencies manage 5,000+ creators with no scalable way to give feedback. We automate that feedback loop with AI.",
+      "sectionLabel": "What I've done",
+      "title": "B2B Sales, Product & Team Lead",
+      "subtitle": "Early-stage AI SaaS Startup, Berlin",
+      "description": "Led sales, product, and day-to-day operations for an AI B2B SaaS startup targeting TikTok Shop agencies.",
       "bullets": [
-        "Co-founder — leading sales and product",
-        "Signed pilot partners",
-        "50+ waiting list — product still in development",
-        "Team of 4 co-founders, started January 2026",
-        "Built on TikTok Shop Seller, Developer & Business APIs"
+        "Signed pilot partners independently through outbound and discovery calls",
+        "Built and managed a 50+ person B2B waiting list",
+        "Defined product strategy, roadmap, and feature priorities",
+        "Led and coordinated a team of 4 across product, tech, and sales",
+        "Defined ICP and go-to-market positioning from scratch"
       ],
       "tags": [
-        "B2B SaaS",
-        "AI",
-        "TikTok Shop"
+        "B2B Sales",
+        "Go-to-Market",
+        "AI SaaS"
       ],
-      "websiteUrl": "https://spreadableai.com",
-      "websiteLabel": "spreadableai.com"
+      "websiteUrl": "",
+      "websiteLabel": ""
     },
     "experience": {
       "sectionLabel": "Experience & Background",
       "heading": "The journey so far",
       "items": [
         {
-          "period": "Jan 2026–Present",
-          "title": "Co-founder",
-          "place": "SpreadableAI, Berlin",
-          "description": "Building an AI TikTok Shop operating system for agencies. Leading sales and product with a team of four co-founders."
+          "period": "Jan 2026–Jun 2026",
+          "title": "Sales & Go-to-Market Lead",
+          "place": "Early-stage AI SaaS Startup, Berlin",
+          "description": "Led B2B sales and go-to-market for an AI product targeting TikTok Shop agencies. Signed pilot partners, built a 50+ waiting list, ran outbound and discovery calls, and defined ICP and positioning from scratch."
         },
         {
           "period": "Jan 2025–Dec 2025",
           "title": "Project Management Assistant",
           "place": "MBition (Mercedes-Benz), Berlin",
-          "description": "Supported the PMO on large-scale automotive infotainment software rollouts. Coordinated PI Planning, cross-functional engineering teams, risk mitigation, and stakeholder communication."
+          "description": "Supported the PMO on large-scale automotive infotainment software rollouts. Coordinated PI Planning, cross-functional engineering and product teams, risk mitigation, and stakeholder communication across technical and non-technical audiences."
         },
         {
           "period": "Aug 2021–Dec 2025",
@@ -97,7 +99,7 @@
           "period": "Sep 2022–Aug 2023",
           "title": "Marketing Assistant",
           "place": "CODE University of Applied Sciences, Berlin",
-          "description": "Managed CODE's Instagram and created content. Organized events across campus."
+          "description": "Managed CODE's Instagram channel and content strategy. Grew engagement through consistent short-form content. Organized campus events."
         },
         {
           "period": "May 2021–Aug 2022",
@@ -136,47 +138,51 @@
       "heading": "What I bring to the table",
       "groups": [
         {
-          "title": "Product & Strategy",
+          "title": "Sales & Customer Success",
+          "skills": [
+            "B2B Sales",
+            "Outbound Outreach / LinkedIn",
+            "Discovery & Closing",
+            "CRM & Pipeline Mgmt",
+            "Customer Onboarding",
+            "Pilot Partner Management"
+          ]
+        },
+        {
+          "title": "Marketing & Content",
+          "skills": [
+            "Social Media Strategy",
+            "Short-form Video",
+            "Content Creation",
+            "Instagram / TikTok / LinkedIn",
+            "Campaign Planning",
+            "Copywriting"
+          ]
+        },
+        {
+          "title": "Product & Operations",
           "skills": [
             "Product Management",
             "Jira & Roadmapping",
             "PI Planning",
             "Stakeholder Comms",
-            "B2B Sales",
             "Risk Management",
-            "Microsoft Excel"
-          ]
-        },
-        {
-          "title": "Building & Technical",
-          "skills": [
+            "Microsoft Excel",
             "Cursor / Vibe Coding",
             "Next.js & React",
-            "TikTok Shop APIs",
-            "Seller & Developer API",
             "AI / LLM Integration"
-          ]
-        },
-        {
-          "title": "Content & Languages",
-          "skills": [
-            "Social Media Growth",
-            "Short-form Video",
-            "Korean (Native)",
-            "English (Fluent)",
-            "German (C1)"
           ]
         }
       ]
     },
     "contact": {
       "heading": "Let's talk.",
-      "subtext": "SpreadableAI, a collab, or just a conversation. I'm open to all of it. I reply fast."
+      "subtext": "Open to customer success, sales, and marketing roles in Hamburg or remote. I reply fast."
     }
   },
   "creator": {
     "hero": {
-      "label": "Content Creator · Berlin · @growjungwoo",
+      "label": "Content Creator · Berlin → Hamburg · @growjungwoo",
       "heading": "Building in public.\nNo filter.",
       "description": "I posted every single day for over a year to find my voice. Korean in Berlin, sharing cultural insights between Korea and Germany, some tips and my life.",
       "primaryCtaLabel": "See my content →",
@@ -184,7 +190,7 @@
     },
     "about": {
       "sectionLabel": "About as Creator",
-      "quote": "I make contents for my German audience in German. Active on IG, TikTok, and YouTube. Occasional Korean and English Contents."
+      "quote": "I create content in German for a German-speaking audience. Active on Instagram, TikTok, and YouTube. Occasional Korean and English content too."
     },
     "portfolio": {
       "sectionLabel": "Content Portfolio",
@@ -279,7 +285,7 @@
     },
     "contact": {
       "heading": "Work with me.",
-      "subtext": "Brand collabs, sponsored content, affiliate partnerships, or just a conversation. Reach out directly. Tell me what you're building and we'll figure out if it's a fit.",
+      "subtext": "Open to brand collabs, sponsored content, or affiliate partnerships.",
       "replyNote": "I reply fast."
     }
   }
