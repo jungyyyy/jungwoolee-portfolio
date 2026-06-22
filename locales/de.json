@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Jungwoo Lee — Founder & Creator",
-    "description": "24-jähriger koreanischer Co-Founder in Berlin. Baut SpreadableAI — KI für TikTok-Shop-Agenturen. Content Creator."
+    "title": "Jungwoo Lee — Sales & Marketing",
+    "description": "24-jähriger Koreaner, aktuell in Hamburg. Erfahrung in B2B-Sales, Marketing und Customer Success. Suche neue Möglichkeiten."
   },
   "nav": {
     "contact": "Kontakt",
@@ -9,7 +9,7 @@
     "closeMenu": "Menü schließen",
     "founder": {
       "about": "Über mich",
-      "building": "Was ich baue",
+      "building": "Was ich gemacht habe",
       "experience": "Erfahrung",
       "skills": "Skills",
       "contact": "Kontakt"
@@ -23,7 +23,7 @@
     }
   },
   "modeToggle": {
-    "founder": "Founder & PM",
+    "founder": "Berufserfahrung",
     "creator": "Content Creator"
   },
   "common": {
