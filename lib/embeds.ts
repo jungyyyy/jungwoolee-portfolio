@@ -17,3 +17,11 @@ export function canEmbed(url: string, platform: PortfolioPlatform): boolean {
   if (platform === "YouTube") return false;
   return getEmbedUrl(url, platform) !== null;
 }
+
+export function getThumbnailUrl(url: string, platform: PortfolioPlatform): string | null {
+  if (platform === "YouTube") {
+    const match = url.match(/(?:shorts\/|v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+    if (match) return `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg`;
+  }
+  return null;
+}

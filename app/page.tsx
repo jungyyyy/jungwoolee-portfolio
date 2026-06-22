@@ -9,7 +9,6 @@ import { Mode } from "@/lib/content";
 
 import FounderHero from "@/components/founder/FounderHero";
 import FounderAbout from "@/components/founder/FounderAbout";
-import Building from "@/components/founder/Building";
 import Experience from "@/components/founder/Experience";
 import Skills from "@/components/founder/Skills";
 import FounderContact from "@/components/founder/FounderContact";
@@ -43,8 +42,6 @@ function PortfolioContent() {
               <FounderHero />
               <SectionDivider />
               <FounderAbout />
-              <SectionDivider />
-              <Building />
               <SectionDivider />
               <Experience />
               <SectionDivider />

@@ -19,8 +19,8 @@ export const defaultContent: SiteContent = {
   },
   founder: {
     hero: {
-      label: "Sales & Marketing · Customer Success",
-      heading: "I left Korea at 15.\nI've been selling, building, and growing things ever since.",
+      label: "Sales & Marketing",
+      heading: "Sales. Marketing. Customer Success.\nProduct-minded. Results-driven.",
       description:
         "Product Management graduate. Experienced in B2B sales, marketing, and customer-facing roles across startups and enterprise. Based in Hamburg, open to opportunities.",
       primaryCtaLabel: "See what I've done →",
