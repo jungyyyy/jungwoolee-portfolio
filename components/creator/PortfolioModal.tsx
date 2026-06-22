@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { getEmbedUrl } from "@/lib/embeds";
 import { PortfolioPlatform } from "@/lib/content-types";
 
@@ -24,26 +24,28 @@ export default function PortfolioModal({
     platform === "YouTube" ? null : getEmbedUrl(url, platform);
 
   useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
+  useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     document.addEventListener("keydown", handleEscape);
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "";
-    };
+    return () => document.removeEventListener("keydown", handleEscape);
   }, [onClose]);
 
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[70] flex items-center justify-center p-4 md:p-8"
-        onClick={onClose}
-      >
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[70] flex items-center justify-center p-4 md:p-8"
+      onClick={onClose}
+    >
         <div className="absolute inset-0 bg-background/90 backdrop-blur-sm" />
 
         <motion.div
@@ -97,7 +99,6 @@ export default function PortfolioModal({
             {t("portfolio.openOn", { platform })}
           </a>
         </motion.div>
-      </motion.div>
-    </AnimatePresence>
+    </motion.div>
   );
 }
