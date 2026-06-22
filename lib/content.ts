@@ -7,7 +7,6 @@ export interface NavLink {
 
 export const founderNavLinks: NavLink[] = [
   { id: "about", labelKey: "nav.founder.about" },
-  { id: "building", labelKey: "nav.founder.building" },
   { id: "experience", labelKey: "nav.founder.experience" },
   { id: "skills", labelKey: "nav.founder.skills" },
   { id: "contact", labelKey: "nav.founder.contact" },

@@ -38,10 +38,21 @@ export default function FounderContact() {
             <span className="block h-px w-0 mx-auto bg-accent transition-all duration-300 group-hover:w-full" />
           </a>
         </FadeIn>
+        <FadeIn delay={0.25}>
+          <a
+            href={content.shared.socialLinks.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-block mt-4 text-lg text-secondary transition-colors hover:text-accent"
+          >
+            linkedin.com/in/jung-woo-lee-9131901a8
+            <span className="block h-px w-0 mx-auto bg-accent transition-all duration-300 group-hover:w-full" />
+          </a>
+        </FadeIn>
         <FadeIn delay={0.3}>
           <SocialIcons
             links={content.shared.socialLinks}
-            className="justify-center mt-12"
+            className="justify-center mt-10"
             iconClassName="w-6 h-6"
           />
         </FadeIn>

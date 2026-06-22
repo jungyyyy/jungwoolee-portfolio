@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../SectionWrapper";
-import FadeIn, { StaggerItem } from "../FadeIn";
+import FadeIn from "../FadeIn";
 import EditableText from "../admin/EditableText";
 import EditableImage from "../admin/EditableImage";
 import { useContent } from "../admin/ContentProvider";
@@ -10,7 +10,7 @@ import { useContent } from "../admin/ContentProvider";
 export default function FounderAbout() {
   const { t } = useTranslation();
   const { content } = useContent();
-  const { about, stats } = content.founder;
+  const { about } = content.founder;
 
   return (
     <SectionWrapper id="about">
@@ -70,26 +70,6 @@ export default function FounderAbout() {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {stats.map(({ value, label }, i) => (
-            <StaggerItem key={i} index={i}>
-              <div className="rounded-card border border-border bg-surface p-6 text-center">
-                <p className="font-heading text-5xl font-bold text-accent heading-display">
-                  <EditableText
-                    contentKey={`founder.stats.${i}.value`}
-                    value={value}
-                  />
-                </p>
-                <p className="mt-2 text-sm text-secondary">
-                  <EditableText
-                    contentKey={`founder.stats.${i}.label`}
-                    value={label}
-                  />
-                </p>
-              </div>
-            </StaggerItem>
-          ))}
-        </div>
       </div>
     </SectionWrapper>
   );
