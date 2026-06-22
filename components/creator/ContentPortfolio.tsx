@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../SectionWrapper";
 import FadeIn, { StaggerItem } from "../FadeIn";
@@ -102,6 +103,7 @@ export default function ContentPortfolio() {
   const { content } = useContent();
   const portfolio = content.creator.portfolio;
   const [activeItem, setActiveItem] = useState<PortfolioItem | null>(null);
+  const handleClose = useCallback(() => setActiveItem(null), []);
 
   return (
     <>
@@ -140,14 +142,17 @@ export default function ContentPortfolio() {
         </div>
       </SectionWrapper>
 
-      {activeItem && (
-        <PortfolioModal
-          url={activeItem.url}
-          platform={activeItem.platform}
-          title={activeItem.title}
-          onClose={() => setActiveItem(null)}
-        />
-      )}
+      <AnimatePresence>
+        {activeItem && (
+          <PortfolioModal
+            key={activeItem.url}
+            url={activeItem.url}
+            platform={activeItem.platform}
+            title={activeItem.title}
+            onClose={handleClose}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }

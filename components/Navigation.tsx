@@ -141,10 +141,14 @@ export default function Navigation({ mode, onModeChange }: NavigationProps) {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            variants={{
+              visible: { opacity: 1, pointerEvents: "auto" as const },
+              hidden:  { opacity: 0, pointerEvents: "none" as const },
+            }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            transition={{ duration: 0.15 }}
             className="fixed inset-0 z-[60] flex flex-col bg-background md:hidden"
           >
             <div className="flex h-14 items-center justify-between px-6 border-b border-border">

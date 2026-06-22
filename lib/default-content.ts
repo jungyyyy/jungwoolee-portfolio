@@ -12,7 +12,7 @@ export const defaultContent: SiteContent = {
     },
   },
   images: {
-    founderHero: "/images/hero.png",
+    founderHero: "/images/hero.jpeg",
     creatorHero: "/images/creator-hero.png",
     about: "/images/about.png",
     spreadableLogo: "/images/spreadableai-logo.png",
@@ -28,8 +28,8 @@ export const defaultContent: SiteContent = {
     },
     about: {
       sectionLabel: "About",
-      quoteLine1: "I left Korea at 15.",
-      quoteLine2: "I've been selling, building, and growing things ever since.",
+      quoteLine1: "",
+      quoteLine2: "",
       paragraphs: [
         "I'm Jungwoo Lee — 24, Korean, based in Berlin, relocating to Hamburg currently.",
         "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025. Since then, I've been deep in the world of B2B sales and marketing, go-to-market strategy, and customer success, leading sales at a startup, signing pilot partners, and learning what it actually takes to get people to say yes.",

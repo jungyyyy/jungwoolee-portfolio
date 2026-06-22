@@ -23,17 +23,19 @@ export default function FounderAbout() {
                 value={about.sectionLabel}
               />
             </FadeIn>
-            <FadeIn as="blockquote" delay={0.1} className="heading-display font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-primary">
-              <EditableText
-                contentKey="founder.about.quoteLine1"
-                value={about.quoteLine1}
-              />
-              <br />
-              <EditableText
-                contentKey="founder.about.quoteLine2"
-                value={about.quoteLine2}
-              />
-            </FadeIn>
+            {about.quoteLine1 && (
+              <FadeIn as="blockquote" delay={0.1} className="heading-display font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-primary">
+                <EditableText
+                  contentKey="founder.about.quoteLine1"
+                  value={about.quoteLine1}
+                />
+                <br />
+                <EditableText
+                  contentKey="founder.about.quoteLine2"
+                  value={about.quoteLine2}
+                />
+              </FadeIn>
+            )}
 
             <FadeIn delay={0.2} className="relative mt-10 max-w-sm">
               <div className="absolute inset-3 dot-grid rounded-card opacity-50" />
