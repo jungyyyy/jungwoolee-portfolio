@@ -67,10 +67,10 @@ export const defaultContent: SiteContent = {
       items: [
         {
           period: "Jan 2026–Jun 2026",
-          title: "Sales & Go-to-Market Lead",
-          place: "Early-stage AI SaaS Startup, Berlin",
+          title: "B2B Sales & Partner Operations (GTM)",
+          place: "Early-stage AI SaaS startup, Berlin",
           description:
-            "Led B2B sales and go-to-market for an AI product targeting TikTok Shop agencies. Signed pilot partners, built a 50+ waiting list, ran outbound and discovery calls, and defined ICP and positioning from scratch.",
+            "Led B2B go-to-market for an AI product for TikTok Shop agencies: acquired pilot partners, built a 60+ lead waitlist, and ran the full funnel from outbound outreach and discovery calls through demos. Defined and iterated ICP and positioning based on customer feedback and objection patterns, maintaining clean pipeline/CRM-style documentation and disciplined follow-ups.",
         },
         {
           period: "Jan 2025–Dec 2025",
