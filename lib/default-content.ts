@@ -31,7 +31,7 @@ export const defaultContent: SiteContent = {
       quoteLine1: "",
       quoteLine2: "",
       paragraphs: [
-        "I'm Jungwoo Lee — 24, Korean, based in Berlin, relocating to Hamburg currently.",
+        "I'm Jungwoo Lee — 24, Korean, based in Hamburg.",
         "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025. Since then, I've been deep in the world of B2B sales and marketing, go-to-market strategy, and customer success, leading sales at a startup, signing pilot partners, and learning what it actually takes to get people to say yes.",
         "Before that, I spent a year at MBition (Mercedes-Benz) supporting large-scale software project rollouts, coordinating across engineering, product, and business stakeholders. That's where I learned how enterprise teams actually operate.",
         "I left Korea alone at 15. UK, Tel Aviv, Germany — four countries before 25. I speak three languages. I learn fast, move fast, and I get up fast.",
@@ -179,10 +179,10 @@ export const defaultContent: SiteContent = {
   },
   creator: {
     hero: {
-      label: "Content Creator · Berlin → Hamburg · @growjungwoo",
-      heading: "Building in public.\nNo filter.",
+      label: "Content Creator · Hamburg · @growjungwoo",
+      heading: "Korea ↔ Germany, explained.",
       description:
-        "I posted every single day for over a year to find my voice. Korean in Berlin, sharing cultural insights between Korea and Germany, some tips and my life.",
+        "I create German-language content about Korean–German cultural differences, everyday life, and Korean products—on TikTok, Instagram, and YouTube.",
       primaryCtaLabel: "See my content →",
       secondaryCtaLabel: "Work with me →",
     },
