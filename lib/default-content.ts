@@ -19,10 +19,10 @@ export const defaultContent: SiteContent = {
   },
   founder: {
     hero: {
-      label: "Sales & Marketing",
-      heading: "Sales. Marketing. Customer Success.\nProduct-minded. Results-driven.",
+      label: "Creative Strategy & Marketing",
+      heading: "Creative Strategy & Marketing\nContent. Hooks. Conversion.",
       description:
-        "Product Management graduate. Experienced in B2B sales, marketing, and customer-facing roles across startups and enterprise. Based in Hamburg, open to opportunities.",
+        "Creator. Researcher. Operator. Product Management graduate. Experienced in creative strategy, UGC, performance marketing, and brand collaborations. Based in Hamburg, open to opportunities.",
       primaryCtaLabel: "See what I've done →",
       secondaryCtaLabel: "Get in touch →",
     },
@@ -32,10 +32,13 @@ export const defaultContent: SiteContent = {
       quoteLine2: "",
       paragraphs: [
         "I'm Jungwoo Lee — 24, Korean, based in Hamburg.",
-        "I graduated from CODE University of Applied Sciences in Digital Product Management in December 2025. Since then, I've been deep in the world of B2B sales and marketing, go-to-market strategy, and customer success, leading sales at a startup, signing pilot partners, and learning what it actually takes to get people to say yes.",
-        "Before that, I spent a year at MBition (Mercedes-Benz) supporting large-scale software project rollouts, coordinating across engineering, product, and business stakeholders. That's where I learned how enterprise teams actually operate.",
+        "I think about one thing obsessively: why content works — what makes someone stop scrolling, why certain hooks create emotion, and how that translates into real buying decisions.",
+        "As a creator, I make brand collaboration content for a German-speaking audience. One video hit 500K+ views. I understand hooks not just as theory — I feel them.",
+        "My Bachelor's thesis was on UGC and brand loyalty in TikTok B2C contexts — how authentic user-generated content shapes consumer-brand relationships and drives purchase decisions.",
+        "I co-founded SpreadableAI, a B2B platform for TikTok Shop agencies. I spent 6 months in deep conversations with UGC and performance marketing agencies across Germany and globally — learning exactly how creative processes work in practice.",
+        "Before that, I spent a year at MBition (Mercedes-Benz) coordinating large-scale software delivery — where I learned how to move fast and stay structured in complex environments.",
         "I left Korea alone at 15. UK, Tel Aviv, Germany — four countries before 25. I speak three languages. I learn fast, move fast, and I get up fast.",
-        "I'm now looking for roles in customer success, sales, or marketing where I can bring both the hustle and the structure.",
+        "I'm now looking for roles in creative strategy, performance marketing, or brand growth — where I can contribute from day one and become genuinely expert at the mechanics behind content that sells.",
       ],
     },
     stats: [
