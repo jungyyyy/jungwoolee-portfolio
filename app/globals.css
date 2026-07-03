@@ -7,20 +7,31 @@ html {
 }
 
 body {
-  background-color: #0a0a0a;
-  color: #f0ede8;
+  background-color: #F7F4EF;
+  color: #1A1A1A;
 }
 
 ::selection {
-  background-color: rgba(245, 166, 35, 0.3);
-  color: #f0ede8;
+  background-color: rgba(232, 82, 42, 0.18);
+  color: #1A1A1A;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @layer utilities {
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+  }
+
   .dot-grid {
     background-image: radial-gradient(
       circle,
-      rgba(245, 166, 35, 0.12) 1px,
+      rgba(232, 82, 42, 0.08) 1px,
       transparent 1px
     );
     background-size: 24px 24px;
@@ -35,13 +46,25 @@ body {
     @apply font-heading heading-display font-bold text-primary;
   }
 
+  .eyebrow {
+    @apply font-body text-[11px] font-medium tracking-[0.15em] uppercase text-accent;
+  }
+
   .hero-photo-shadow {
-    box-shadow: 0 20px 60px rgba(245, 166, 35, 0.15);
+    box-shadow: 0 20px 60px rgba(232, 82, 42, 0.10);
+  }
+
+  .card-base {
+    @apply bg-surface border border-border rounded-card shadow-card;
+  }
+
+  .tag-chip {
+    @apply inline-block rounded-pill bg-accent-2/20 text-accent px-3 py-1 text-xs font-medium;
   }
 }
 
 .noise-overlay {
-  opacity: 0.03;
+  opacity: 0.015;
   filter: url(#noise-filter);
-  background: #ffffff;
+  background: #000000;
 }

@@ -35,7 +35,7 @@ function PortfolioCard({
   return (
     <StaggerItem index={index} as="article">
       <div
-        className="group rounded-card border border-border bg-surface overflow-hidden transition-all duration-200 hover:border-accent/20 hover:shadow-amber-glow cursor-pointer"
+        className="group rounded-card border border-border bg-surface overflow-hidden shadow-card transition-all duration-200 hover:shadow-card-hover hover:-translate-y-1 cursor-pointer"
         onClick={handleWatch}
         role="button"
         tabIndex={0}
@@ -125,9 +125,9 @@ export default function ContentPortfolio() {
 
   return (
     <>
-      <SectionWrapper id="portfolio">
+      <SectionWrapper id="portfolio" variant="default">
         <div className="mx-auto max-w-7xl">
-          <FadeIn as="p" className="text-sm text-accent mb-4">
+          <FadeIn as="p" className="eyebrow mb-4">
             <EditableText
               contentKey="creator.portfolio.sectionLabel"
               value={portfolio.sectionLabel}

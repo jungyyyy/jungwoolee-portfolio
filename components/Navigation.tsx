@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import ModeToggle from "./ModeToggle";
 import LanguageToggle from "./LanguageToggle";
+import MarqueeBar from "./MarqueeBar";
 import {
   Mode,
   founderNavLinks,
@@ -33,13 +34,13 @@ function NavLinkItem({
     <a
       href={`#${link.id}`}
       onClick={onClick}
-      className={`group relative text-sm transition-colors duration-200 ${
-        isActive ? "text-accent" : "text-secondary hover:text-primary"
+      className={`group relative text-sm font-body transition-colors duration-200 ${
+        isActive ? "text-accent" : "text-secondary hover:text-accent"
       }`}
     >
       {t(link.labelKey)}
       <span
-        className={`absolute -bottom-1 left-0 h-px bg-accent transition-all duration-300 ease-out ${
+        className={`absolute -bottom-1 left-0 h-px bg-accent transition-all duration-200 ease-out ${
           isActive ? "w-full" : "w-0 group-hover:w-full"
         }`}
       />
@@ -92,11 +93,11 @@ export default function Navigation({ mode, onModeChange }: NavigationProps) {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
         <nav className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 md:px-12 lg:px-20">
           <a
             href="#hero"
-            className="text-xs font-semibold uppercase tracking-[0.2em] text-accent shrink-0"
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-accent shrink-0 font-body"
           >
             {t("common.name")}
           </a>
@@ -116,7 +117,7 @@ export default function Navigation({ mode, onModeChange }: NavigationProps) {
 
             <a
               href="#contact"
-              className="hidden md:inline-flex shrink-0 rounded-pill border border-border px-5 py-2 text-sm text-primary transition-all duration-200 hover:border-accent hover:text-accent"
+              className="hidden md:inline-flex shrink-0 rounded border border-accent px-5 py-2 text-sm font-medium text-accent font-body transition-all duration-200 hover:bg-accent hover:text-white"
             >
               {t("nav.contact")}
             </a>
@@ -133,9 +134,11 @@ export default function Navigation({ mode, onModeChange }: NavigationProps) {
           </div>
         </nav>
 
-        <div className="hidden md:flex justify-center border-t border-border/30 px-6 py-2.5">
+        <div className="hidden md:flex justify-center border-t border-border/40 px-6 py-2.5">
           <ModeToggle mode={mode} onModeChange={onModeChange} />
         </div>
+
+        <MarqueeBar />
       </header>
 
       <AnimatePresence>
@@ -152,7 +155,7 @@ export default function Navigation({ mode, onModeChange }: NavigationProps) {
             className="fixed inset-0 z-[60] flex flex-col bg-background md:hidden"
           >
             <div className="flex h-14 items-center justify-between px-6 border-b border-border">
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent font-body">
                 {t("common.name")}
               </span>
               <div className="flex items-center gap-4">
@@ -186,7 +189,7 @@ export default function Navigation({ mode, onModeChange }: NavigationProps) {
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-4 rounded-pill border border-border px-8 py-3 text-sm text-primary transition-all duration-200 hover:border-accent hover:text-accent"
+                className="mt-4 rounded border border-accent px-8 py-3 text-sm font-medium text-accent font-body transition-all duration-200 hover:bg-accent hover:text-white"
               >
                 {t("nav.contact")}
               </a>

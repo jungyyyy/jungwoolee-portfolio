@@ -10,13 +10,13 @@ export default function Building() {
   const building = content.founder.building;
 
   return (
-    <SectionWrapper id="building">
+    <SectionWrapper id="building" variant="default">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <div className="rounded-card border border-accent/20 bg-surface p-8 md:p-12 shadow-amber-glow">
+          <div className="rounded-card border border-border bg-surface p-8 md:p-12 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1">
             <div className="grid grid-cols-1 gap-10 items-start">
-              <div className="">
-                <FadeIn as="p" delay={0.1} className="text-sm text-accent mb-2">
+              <div>
+                <FadeIn as="p" delay={0.1} className="eyebrow mb-3">
                   <EditableText
                     contentKey="founder.building.sectionLabel"
                     value={building.sectionLabel}
@@ -28,14 +28,14 @@ export default function Building() {
                     value={building.title}
                   />
                 </FadeIn>
-                <FadeIn as="p" delay={0.3} className="mt-2 text-lg text-secondary">
+                <FadeIn as="p" delay={0.3} className="mt-2 text-lg text-secondary font-body">
                   <EditableText
                     contentKey="founder.building.subtitle"
                     value={building.subtitle}
                   />
                 </FadeIn>
 
-                <FadeIn as="p" delay={0.4} className="mt-6 text-secondary leading-relaxed max-w-2xl">
+                <FadeIn as="p" delay={0.4} className="mt-6 text-secondary leading-[1.75] max-w-2xl font-body">
                   <EditableText
                     contentKey="founder.building.description"
                     value={building.description}
@@ -44,8 +44,8 @@ export default function Building() {
 
                 <ul className="mt-6 space-y-3">
                   {building.bullets.map((bullet, i) => (
-                    <StaggerItem key={i} index={i} as="li" className="flex items-start gap-3 text-primary">
-                      <span className="text-accent mt-0.5">✦</span>
+                    <StaggerItem key={i} index={i} as="li" className="flex items-start gap-3 text-primary font-body">
+                      <span className="text-accent mt-0.5 shrink-0">✦</span>
                       <EditableText
                         contentKey={`founder.building.bullets.${i}`}
                         value={bullet}
@@ -57,7 +57,7 @@ export default function Building() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   {building.tags.map((tag, i) => (
                     <StaggerItem key={i} index={i}>
-                      <span className="inline-block rounded-pill bg-border px-4 py-1.5 text-xs text-secondary">
+                      <span className="tag-chip">
                         <EditableText
                           contentKey={`founder.building.tags.${i}`}
                           value={tag}
@@ -73,7 +73,7 @@ export default function Building() {
                       href={building.websiteUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group inline-flex items-center mt-8 text-accent transition-opacity hover:opacity-80"
+                      className="group inline-flex items-center mt-8 text-accent font-body transition-opacity hover:opacity-80"
                     >
                       <EditableText
                         contentKey="founder.building.websiteLabel"

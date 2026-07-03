@@ -44,10 +44,10 @@ export function HeroPhoto({
           <motion.div
             whileHover={{
               scale: 1.02,
-              boxShadow: "0 24px 70px rgba(245, 166, 35, 0.22)",
+              boxShadow: "0 24px 70px rgba(232, 82, 42, 0.15)",
             }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="relative rotate-[2.5deg] overflow-hidden rounded-card border border-accent/40 hero-photo-shadow"
+            className="relative rotate-[2.5deg] overflow-hidden rounded-card border border-border hero-photo-shadow"
           >
             <EditableImage
               contentKey={contentKey}
@@ -61,7 +61,7 @@ export function HeroPhoto({
               uploadLabel={t("hero.uploadHero")}
             />
             <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent/10 via-transparent to-transparent"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent/5 via-transparent to-transparent"
               aria-hidden="true"
             />
           </motion.div>
@@ -88,11 +88,15 @@ export function HeroContent({
 
   return (
     <div className="flex flex-col justify-center">
-      <FadeIn as="p" className="mb-4 text-sm text-accent">
+      <FadeIn as="p" className="eyebrow mb-4">
         <EditableText contentKey={`${prefix}.label`} value={data.label} />
       </FadeIn>
 
-      <FadeIn as="h1" delay={0.1} className="heading-display font-heading text-4xl lg:text-7xl font-bold leading-[1.05] text-primary">
+      <FadeIn
+        as="h1"
+        delay={0.1}
+        className="heading-display font-heading font-bold leading-[1.05] text-primary text-[clamp(48px,7vw,88px)]"
+      >
         <EditableText
           contentKey={`${prefix}.heading`}
           value={data.heading}
@@ -100,7 +104,7 @@ export function HeroContent({
         />
       </FadeIn>
 
-      <FadeIn as="p" delay={0.2} className="mt-6 max-w-lg text-base md:text-lg text-secondary leading-relaxed">
+      <FadeIn as="p" delay={0.2} className="mt-6 max-w-[520px] text-base text-secondary leading-[1.75] font-body">
         <EditableText
           contentKey={`${prefix}.description`}
           value={data.description}
@@ -109,17 +113,8 @@ export function HeroContent({
 
       <FadeIn delay={0.3} className="mt-8 flex flex-wrap gap-4">
         <a
-          href={primaryHref}
-          className="rounded-pill bg-accent px-6 py-3 text-sm font-medium text-background transition-opacity duration-200 hover:opacity-90"
-        >
-          <EditableText
-            contentKey={`${prefix}.primaryCtaLabel`}
-            value={data.primaryCtaLabel}
-          />
-        </a>
-        <a
           href={secondaryHref}
-          className="rounded-pill border border-border px-6 py-3 text-sm text-primary transition-all duration-200 hover:border-accent hover:text-accent"
+          className="rounded border border-accent px-7 py-3 text-sm font-medium text-accent font-body transition-all duration-200 hover:bg-accent hover:text-white"
         >
           <EditableText
             contentKey={`${prefix}.secondaryCtaLabel`}

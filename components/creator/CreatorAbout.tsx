@@ -32,9 +32,9 @@ export default function CreatorAbout() {
   const platforms = content.creator.platforms.items;
 
   return (
-    <SectionWrapper id="about">
+    <SectionWrapper id="about" variant="alt">
       <div className="mx-auto max-w-4xl">
-        <FadeIn as="p" className="text-sm text-accent mb-6">
+        <FadeIn as="p" className="eyebrow mb-6">
           <EditableText
             contentKey="creator.about.sectionLabel"
             value={about.sectionLabel}
@@ -54,12 +54,12 @@ export default function CreatorAbout() {
                 href={platform.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 rounded-card border border-border bg-surface px-6 py-4 transition-all duration-200 hover:border-accent/30"
+                className="group flex items-center gap-3 rounded-card border border-border bg-surface px-6 py-4 shadow-card transition-all duration-200 hover:border-accent/40 hover:shadow-card-hover hover:-translate-y-0.5"
               >
                 <PlatformIcon name={platform.platform} />
                 <div>
-                  <p className="text-xs text-secondary">{platform.platform}</p>
-                  <p className="text-sm text-primary">
+                  <p className="text-xs text-secondary font-body">{platform.platform}</p>
+                  <p className="text-sm text-primary font-body">
                     <EditableText
                       contentKey={`creator.platforms.items.${i}.handle`}
                       value={platform.handle}

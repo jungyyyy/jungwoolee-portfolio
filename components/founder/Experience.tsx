@@ -10,9 +10,9 @@ export default function Experience() {
   const experience = content.founder.experience;
 
   return (
-    <SectionWrapper id="experience">
+    <SectionWrapper id="experience" variant="alt">
       <div className="mx-auto max-w-7xl">
-        <FadeIn as="p" className="text-sm text-accent mb-4">
+        <FadeIn as="p" className="eyebrow mb-4">
           <EditableText
             contentKey="founder.experience.sectionLabel"
             value={experience.sectionLabel}
@@ -34,7 +34,7 @@ export default function Experience() {
                 <div className="relative grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
                   <div className="md:col-span-2 flex items-start gap-4 md:justify-end md:pr-8">
                     <div className="relative z-10 mt-1.5 h-3.5 w-3.5 shrink-0 rounded-full border-2 border-accent bg-background md:absolute md:-right-[7px] md:top-2" />
-                    <p className="text-sm font-medium text-accent md:text-right">
+                    <p className="text-sm font-medium text-accent md:text-right font-body">
                       <EditableText
                         contentKey={`founder.experience.items.${index}.period`}
                         value={item.period}
@@ -43,19 +43,19 @@ export default function Experience() {
                   </div>
 
                   <div className="md:col-span-10 md:pl-8">
-                    <h3 className="text-lg font-semibold text-primary">
+                    <h3 className="text-lg font-semibold text-primary font-body">
                       <EditableText
                         contentKey={`founder.experience.items.${index}.title`}
                         value={item.title}
                       />
                     </h3>
-                    <p className="text-sm text-accent/80">
+                    <p className="text-sm text-accent/80 font-body">
                       <EditableText
                         contentKey={`founder.experience.items.${index}.place`}
                         value={item.place}
                       />
                     </p>
-                    <p className="mt-2 text-secondary leading-relaxed max-w-xl">
+                    <p className="mt-2 text-secondary leading-[1.75] max-w-xl font-body">
                       <EditableText
                         contentKey={`founder.experience.items.${index}.description`}
                         value={item.description}

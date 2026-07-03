@@ -10,9 +10,9 @@ export default function WhatBrandsGet() {
   const brands = content.creator.brands;
 
   return (
-    <SectionWrapper id="brands">
+    <SectionWrapper id="brands" variant="default">
       <div className="mx-auto max-w-7xl">
-        <FadeIn as="p" className="text-sm text-accent mb-4">
+        <FadeIn as="p" className="eyebrow mb-4">
           <EditableText
             contentKey="creator.brands.sectionLabel"
             value={brands.sectionLabel}
@@ -28,15 +28,15 @@ export default function WhatBrandsGet() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {brands.items.map(({ emoji, title, description }, i) => (
             <StaggerItem key={i} index={i}>
-              <div className="rounded-card border border-border bg-surface p-8 h-full">
+              <div className="rounded-card border border-border bg-surface p-8 shadow-card transition-all duration-200 hover:shadow-card-hover hover:-translate-y-1 h-full">
                 <span className="text-3xl">{emoji}</span>
-                <h3 className="mt-4 text-lg font-semibold text-primary">
+                <h3 className="mt-4 text-lg font-semibold text-primary font-body">
                   <EditableText
                     contentKey={`creator.brands.items.${i}.title`}
                     value={title}
                   />
                 </h3>
-                <p className="mt-3 text-secondary leading-relaxed text-sm">
+                <p className="mt-3 text-secondary leading-[1.75] text-sm font-body">
                   <EditableText
                     contentKey={`creator.brands.items.${i}.description`}
                     value={description}

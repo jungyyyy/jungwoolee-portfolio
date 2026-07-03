@@ -9,24 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
-        surface: "#111111",
-        border: "#222222",
-        primary: "#F0EDE8",
-        secondary: "#888888",
-        accent: "#F5A623",
+        background: "#F7F4EF",
+        "bg-alt": "#EEEAE2",
+        surface: "#FFFFFF",
+        border: "#DDD8D0",
+        primary: "#1A1A1A",
+        secondary: "#6B6560",
+        accent: "#E8522A",
+        "accent-2": "#F2A65A",
       },
       fontFamily: {
         heading: ["var(--font-playfair)", "Georgia", "serif"],
-        body: ["var(--font-inter)", "system-ui", "sans-serif"],
+        body: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
       },
       borderRadius: {
-        card: "12px",
+        card: "8px",
         pill: "999px",
       },
       boxShadow: {
-        "amber-glow": "0 0 40px rgba(245, 166, 35, 0.15)",
-        "amber-glow-strong": "0 0 60px rgba(245, 166, 35, 0.25)",
+        card: "0 2px 16px rgba(0,0,0,0.06)",
+        "card-hover": "0 8px 32px rgba(0,0,0,0.10)",
       },
     },
   },

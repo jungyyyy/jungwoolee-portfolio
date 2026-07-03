@@ -10,9 +10,9 @@ export default function Skills() {
   const skills = content.founder.skills;
 
   return (
-    <SectionWrapper id="skills">
+    <SectionWrapper id="skills" variant="default">
       <div className="mx-auto max-w-7xl">
-        <FadeIn as="p" className="text-sm text-accent mb-4">
+        <FadeIn as="p" className="eyebrow mb-4">
           <EditableText
             contentKey="founder.skills.sectionLabel"
             value={skills.sectionLabel}
@@ -29,7 +29,7 @@ export default function Skills() {
           {skills.groups.map(({ title, skills: groupSkills }, groupIndex) => (
             <StaggerItem key={groupIndex} index={groupIndex}>
               <div>
-                <h3 className="text-sm font-medium text-primary mb-4">
+                <h3 className="text-sm font-medium text-primary mb-4 font-body uppercase tracking-wide">
                   <EditableText
                     contentKey={`founder.skills.groups.${groupIndex}.title`}
                     value={title}
@@ -38,7 +38,7 @@ export default function Skills() {
                 <div className="flex flex-wrap gap-2">
                   {groupSkills.map((skill, skillIndex) => (
                     <StaggerItem key={skillIndex} index={skillIndex}>
-                      <span className="inline-block rounded-pill bg-border px-4 py-2 text-sm text-secondary transition-colors duration-200 hover:text-accent cursor-default">
+                      <span className="inline-block rounded-pill border border-border bg-surface px-4 py-2 text-sm text-secondary font-body transition-colors duration-200 hover:border-accent hover:text-accent cursor-default shadow-card">
                         <EditableText
                           contentKey={`founder.skills.groups.${groupIndex}.skills.${skillIndex}`}
                           value={skill}

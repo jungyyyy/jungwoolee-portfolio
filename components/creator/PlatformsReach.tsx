@@ -10,9 +10,9 @@ export default function PlatformsReach() {
   const platforms = content.creator.platforms;
 
   return (
-    <SectionWrapper id="platforms">
+    <SectionWrapper id="platforms" variant="alt">
       <div className="mx-auto max-w-7xl">
-        <FadeIn as="p" className="text-sm text-accent mb-4">
+        <FadeIn as="p" className="eyebrow mb-4">
           <EditableText
             contentKey="creator.platforms.sectionLabel"
             value={platforms.sectionLabel}
@@ -32,7 +32,7 @@ export default function PlatformsReach() {
                 href={platform.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-card border border-border bg-surface p-8 transition-all duration-200 hover:border-accent/20 hover:shadow-amber-glow h-full"
+                className="block rounded-card border border-border bg-surface p-8 shadow-card transition-all duration-200 hover:border-accent/40 hover:shadow-card-hover hover:-translate-y-1 h-full"
               >
                 <h3 className="heading-display font-heading text-2xl font-bold text-primary">
                   <EditableText
@@ -40,7 +40,7 @@ export default function PlatformsReach() {
                     value={platform.platform}
                   />
                 </h3>
-                <p className="mt-2 text-accent">
+                <p className="mt-2 text-accent font-body">
                   <EditableText
                     contentKey={`creator.platforms.items.${i}.handle`}
                     value={platform.handle}
@@ -48,13 +48,13 @@ export default function PlatformsReach() {
                 </p>
                 <div className="mt-6 space-y-4">
                   <div>
-                    <p className="text-sm font-medium text-primary">
+                    <p className="text-sm font-medium text-primary font-body">
                       <EditableText
                         contentKey={`creator.platforms.items.${i}.focus`}
                         value={platform.focus}
                       />
                     </p>
-                    <p className="text-xs text-secondary mt-1">
+                    <p className="text-xs text-secondary mt-1 font-body">
                       <EditableText
                         contentKey={`creator.platforms.items.${i}.cadence`}
                         value={platform.cadence}

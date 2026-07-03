@@ -19,7 +19,7 @@ export default function ModeToggle({ mode, onModeChange }: ModeToggleProps) {
   ];
 
   return (
-    <div className="relative flex items-center rounded-pill border border-border bg-surface p-1 max-w-full">
+    <div className="relative flex items-center rounded-pill border border-border bg-surface p-1 max-w-full shadow-card">
       <motion.div
         className="absolute top-1 bottom-1 rounded-pill bg-accent/10 border border-accent/30"
         initial={false}
@@ -33,7 +33,7 @@ export default function ModeToggle({ mode, onModeChange }: ModeToggleProps) {
         <button
           key={value}
           onClick={() => onModeChange(value)}
-          className={`relative z-10 px-3 py-1.5 text-xs md:text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
+          className={`relative z-10 px-3 py-1.5 text-xs md:text-sm font-medium font-body transition-colors duration-200 whitespace-nowrap ${
             mode === value ? "text-accent" : "text-secondary hover:text-primary"
           }`}
         >

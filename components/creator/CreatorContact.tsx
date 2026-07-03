@@ -12,15 +12,18 @@ export default function CreatorContact() {
   const email = content.shared.contactEmail;
 
   return (
-    <SectionWrapper id="contact" className="pb-32">
+    <SectionWrapper id="contact" variant="alt" className="pb-32">
       <div className="mx-auto max-w-3xl text-center">
+        <FadeIn as="p" className="eyebrow mb-6">
+          — Contact
+        </FadeIn>
         <FadeIn as="h2" className="heading-section text-4xl md:text-5xl lg:text-6xl">
           <EditableText
             contentKey="creator.contact.heading"
             value={contact.heading}
           />
         </FadeIn>
-        <FadeIn as="p" delay={0.1} className="mt-6 text-secondary leading-relaxed max-w-lg mx-auto">
+        <FadeIn as="p" delay={0.1} className="mt-6 text-secondary leading-[1.75] max-w-lg mx-auto font-body">
           <EditableText
             contentKey="creator.contact.subtext"
             value={contact.subtext}
@@ -39,7 +42,7 @@ export default function CreatorContact() {
           </a>
         </FadeIn>
         {contact.replyNote && (
-          <FadeIn as="p" delay={0.3} className="mt-4 text-sm text-secondary">
+          <FadeIn as="p" delay={0.3} className="mt-4 text-sm text-secondary font-body">
             <EditableText
               contentKey="creator.contact.replyNote"
               value={contact.replyNote}
@@ -52,6 +55,14 @@ export default function CreatorContact() {
             className="justify-center mt-12"
             iconClassName="w-6 h-6"
           />
+        </FadeIn>
+
+        <FadeIn delay={0.5}>
+          <div className="mt-16 pt-10 border-t border-border">
+            <p className="text-xs text-secondary font-body">
+              © {new Date().getFullYear()} Jungwoo Lee · Hamburg
+            </p>
+          </div>
         </FadeIn>
       </div>
     </SectionWrapper>
